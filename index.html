@@ -9,7 +9,7 @@
     <!-- Boostrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    
+
     <!-- My css -->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -20,7 +20,55 @@
     <!-- Main Container -->
     <div class="container-fluid">
 
-        
+        <div class="row">
+
+            <!-- User name and language , curruncy mode  showing header -->
+            <div class="col-12 bg-light">
+                <div class="row">
+                    <!-- user name -->
+                    <div class="col-6 d-flex align-items-center ">
+                        <span class="fw-bolder text-center ">Mrs.Jone Prand</span>
+                    </div>
+
+                    <!-- language and currency -->
+                    <div class="col-6 d-flex justify-content-end">
+                        <div class="row">
+
+                            <!-- currency drop down -->
+                            <div class="col-6">
+                                <div class="dropdown">
+                                    <button class="btn btn-light dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        USD - $
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><button class="dropdown-item" type="button">LKR - Rs</button></li>
+                                        <li><button class="dropdown-item" type="button">INR - Rs</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- language drop down -->
+                            <div class="col-6">
+                                <div class="dropdown">
+                                    <button class="btn btn-light dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        English
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><button class="dropdown-item" type="button">Sinhala</button></li>
+                                        <li><button class="dropdown-item" type="button">Russhian</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 
 
