@@ -10,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
+    <!-- linking Boostrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
     <!-- My css -->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -20,10 +23,11 @@
     <!-- Main Container -->
     <div class="container-fluid">
 
+        <!-- header -->
         <div class="row">
 
-            <!-- User name and language , curruncy mode  showing header -->
             <div class="col-12 bg-light">
+                <!-- User name and language , curruncy mode  showing header -->
                 <div class="row">
                     <!-- user name -->
                     <div class="col-6 d-flex align-items-center ">
@@ -66,8 +70,307 @@
                     </div>
                 </div>
 
+                
+
+                <!-- Logo , serch , wishlist,cart showing header  <hr>-->
+                
+                <!-- <div class="row">
+                    <div class="col-12 bg-light">
+                        <div class="row">
+
+                            logo
+                            <div class="col-lg-3 col-12">
+                                <img src="./src/logo.png" alt="logo"
+                                    class="rounded mx-2 me-1 img-thumbnail bg-light border-0 d-none d-lg-block"
+                                    style="height: 50px;">
+                                <div class="row">
+                                    <div class="d-lg-none col-6 d-flex justify-content-between">
+                                        <img src="./src/logo.png" alt="logo"
+                                            class="rounded mx-2 me-1 img-thumbnail bg-light border-0"
+                                            style="height: 50px;">
+
+                                    </div>
+                                    <div class="col-6 d-lg-none d-flex justify-content-end ">
+
+                                        <button class="btn btn-light">
+                                            <h3 class=" bi bi-person fw-bold  "></h3>
+                                        </button>
+                                        <button class="btn btn-light">
+                                            <h3 class=" bi bi-heart text-danger fw-bold  "></h3>
+                                        </button>
+                                        <button class="btn btn-light">
+                                            <h3 class=" bi bi-bag  fw-bold  "></h3>
+                                        </button>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            search
+                            <div class="col-12 col-lg-6">
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">All cattogories</button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
+                                        <li><a class="dropdown-item" href="#">Laptops</a></li>
+                                        <li><a class="dropdown-item" href="#">Computers</a></li>
+                                        <li><a class="dropdown-item" href="#">computer accessories</a></li>
+                                    </ul>
+                                    <input type="text" class="form-control"
+                                        aria-label="Text input with dropdown button">
+                                    <button class="btn btn-primary">Search</button>
+                                </div>
+                            </div>
+
+                             profile,wishlist,cart
+                            <div class="col-3 d-none d-lg-flex justify-content-end ">
+
+                                <button class="btn btn-light">
+                                    <h3 class=" bi bi-person fw-bold  "></h3>
+                                </button>
+                                <button class="btn btn-light">
+                                    <h3 class=" bi bi-heart text-danger fw-bold  "></h3>
+                                </button>
+                                <button class="btn btn-light">
+                                    <h3 class=" bi bi-bag  fw-bold"></h3>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <hr>
+            </div>
+
+
+        </div>
+
+        <!-- Nav bar -->
+        <div class="row sticky-top">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><img src="./src/logo.png" alt="logo"
+                            class="rounded mx-2 me-1 img-thumbnail bg-light border-0 d-none d-lg-block"
+                            style="height: 50px;"></a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+
+                        <div class="collapse navbar-collapse" id="navbarScroll">
+
+                            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                                style="--bs-scroll-height: 100px;">
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">My Orders</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        cattogories
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Computers</a></li>
+                                        <li><a class="dropdown-item" href="#">Laptops</a></li>
+                                        <li><a class="dropdown-item" href="#">Audio device</a></li>
+                                        <li><a class="dropdown-item" href="#">computer accessories</a></li>
+                                        
+                                    </ul>
+                                </li>
+                               
+                            </ul>
+                            
+                            <form class="d-flex col-lg-6  col-12" role="search">
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">All cattogories</button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
+                                        <li><a class="dropdown-item" href="#">Laptops</a></li>
+                                        <li><a class="dropdown-item" href="#">Computers</a></li>
+                                        <li><a class="dropdown-item" href="#">computer accessories</a></li>
+                                    </ul>
+                                    <input type="text" class="form-control"
+                                        aria-label="Text input with dropdown button">
+                                    <button class="btn btn-primary">Search</button>
+                                </div>
+                            </form>
+
+                            <div class="col-3 d-none d-lg-flex justify-content-end ">
+
+                                <button class="btn btn-light">
+                                    <h3 class=" bi bi-person fw-bold  "></h3>
+                                </button>
+                                <button class="btn btn-light">
+                                    <h3 class=" bi bi-heart text-danger fw-bold  "></h3>
+                                </button>
+                                <button class="btn btn-light">
+                                    <h3 class=" bi bi-bag  fw-bold"></h3>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod necessitatibus impedit saepe dicta reiciendis
+            ea recusandae molestiae vel obcaecati. Consequuntur fuga architecto laudantium earum quis repellendus fugit,
+            nisi totam eum.br <br>
+
+        </p>
+
+
+
+
+
 
     </div>
 
