@@ -20,8 +20,10 @@
 </head>
 
 <body>
+
     <!-- Main Container -->
     <div class="container-fluid">
+
 
         <!-- header -->
         <div class="row">
@@ -31,7 +33,7 @@
                 <div class="row">
                     <!-- user name -->
                     <div class="col-6 d-flex align-items-center ">
-                        <span class="fw-bolder text-center ">Mrs.Jone Prand</span>
+                        <span class="fw-bolder text-center "> <a href="./pages/user/login.html">Login Here</a> </span>
                     </div>
 
                     <!-- language and currency -->
@@ -70,77 +72,9 @@
                     </div>
                 </div>
 
-                
 
-                <!-- Logo , serch , wishlist,cart showing header  <hr>-->
-                
-                <!-- <div class="row">
-                    <div class="col-12 bg-light">
-                        <div class="row">
 
-                            logo
-                            <div class="col-lg-3 col-12">
-                                <img src="./src/logo.png" alt="logo"
-                                    class="rounded mx-2 me-1 img-thumbnail bg-light border-0 d-none d-lg-block"
-                                    style="height: 50px;">
-                                <div class="row">
-                                    <div class="d-lg-none col-6 d-flex justify-content-between">
-                                        <img src="./src/logo.png" alt="logo"
-                                            class="rounded mx-2 me-1 img-thumbnail bg-light border-0"
-                                            style="height: 50px;">
 
-                                    </div>
-                                    <div class="col-6 d-lg-none d-flex justify-content-end ">
-
-                                        <button class="btn btn-light">
-                                            <h3 class=" bi bi-person fw-bold  "></h3>
-                                        </button>
-                                        <button class="btn btn-light">
-                                            <h3 class=" bi bi-heart text-danger fw-bold  "></h3>
-                                        </button>
-                                        <button class="btn btn-light">
-                                            <h3 class=" bi bi-bag  fw-bold  "></h3>
-                                        </button>
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            search
-                            <div class="col-12 col-lg-6">
-                                <div class="input-group mb-3">
-                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">All cattogories</button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
-                                        <li><a class="dropdown-item" href="#">Laptops</a></li>
-                                        <li><a class="dropdown-item" href="#">Computers</a></li>
-                                        <li><a class="dropdown-item" href="#">computer accessories</a></li>
-                                    </ul>
-                                    <input type="text" class="form-control"
-                                        aria-label="Text input with dropdown button">
-                                    <button class="btn btn-primary">Search</button>
-                                </div>
-                            </div>
-
-                             profile,wishlist,cart
-                            <div class="col-3 d-none d-lg-flex justify-content-end ">
-
-                                <button class="btn btn-light">
-                                    <h3 class=" bi bi-person fw-bold  "></h3>
-                                </button>
-                                <button class="btn btn-light">
-                                    <h3 class=" bi bi-heart text-danger fw-bold  "></h3>
-                                </button>
-                                <button class="btn btn-light">
-                                    <h3 class=" bi bi-bag  fw-bold"></h3>
-                                </button>
-
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
 
                 <hr>
             </div>
@@ -154,8 +88,8 @@
                 <nav class="navbar navbar-expand-lg bg-light">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#"><img src="./src/logo.png" alt="logo"
-                            class="rounded mx-2 me-1 img-thumbnail bg-light border-0 d-none d-lg-block"
-                            style="height: 50px;"></a>
+                                class="rounded mx-2 me-1 img-thumbnail bg-light border-0 d-none d-lg-block"
+                                style="height: 50px;"></a>
 
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
@@ -180,19 +114,19 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        cattogories
+                                        catergories
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Computers</a></li>
-                                        <li><a class="dropdown-item" href="#">Laptops</a></li>
+                                        <li><a class="dropdown-item" href="#computer">Computers</a></li>
+                                        <li><a class="dropdown-item" href="#laptop">Laptops</a></li>
                                         <li><a class="dropdown-item" href="#">Audio device</a></li>
                                         <li><a class="dropdown-item" href="#">computer accessories</a></li>
-                                        
+
                                     </ul>
                                 </li>
-                               
+
                             </ul>
-                            
+
                             <form class="d-flex col-lg-6  col-12" role="search">
                                 <div class="input-group mb-3">
                                     <button class="btn btn-outline-secondary dropdown-toggle" type="button"
@@ -211,14 +145,16 @@
 
                             <div class="col-3 d-none d-lg-flex justify-content-end ">
 
-                                <button class="btn btn-light" >
-                                    <a href="./pages/user/login.html" class="text-dark" ><h3 class=" bi bi-person fw-bold  "></h3></a>
-                                    
+                                <button class="btn btn-light">
+                                    <a href="./pages/user/login.html" class="text-dark">
+                                        <h3 class=" bi bi-person fw-bold  "></h3>
+                                    </a>
+
                                 </button>
                                 <button class="btn btn-light">
                                     <h3 class=" bi bi-heart text-danger fw-bold  "></h3>
                                 </button>
-                                <button class="btn btn-light">
+                                <button class="btn btn-light" onclick="toggleCart()">
                                     <h3 class=" bi bi-bag  fw-bold"></h3>
                                 </button>
 
@@ -229,143 +165,463 @@
             </div>
         </div>
 
+
+    
+
         <!-- carosel -->
-        <div class="row">
+        <div class="row d-none d-lg-block">
             <div class="col-12">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./src/carosal (1).jpg" class="d-block w-100" alt="...">
-                      </div>
-                      
-                      <div class="carousel-item">
-                        <img src="./src/carosal (3).jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./src/carosal (4).jpg" class="d-block w-100" alt="...">
-                      </div>
+                        <div class="carousel-item active">
+                            <img src="./src/carosal (1).jpg" class="d-block w-100" alt="...">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="./src/carosal (3).jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./src/carosal (4).jpg" class="d-block w-100" alt="...">
+                        </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
                     </button>
-                  </div>
+                </div>
             </div>
 
-            
+
         </div>
 
         <br>
         <br>
         <!-- Special Offers -->
-        <span class="fw-bold fs-3 text-capitalize">special Offers</span>
+        <span id="specialOffers" class="fw-bold fs-3 text-capitalize">special Offers</span>
         <div class="row">
-            
-            <!-- item  PID_5566-->
-            <div class="col-12 col-lg-4  mt-2 " onmouseover="onmouseover_item('PID_5566')" onmouseout="onmouseout_item('PID_5566')" id="PID_5566">
+
+            <!-- item  PID_5599-->
+            <div class="col-12 col-lg-4  mt-2 " onmouseover="onmouseover_item('PID_5599')"
+                onmouseout="onmouseout_item('PID_5599')" id="PID_5599">
                 <div class="row">
                     <div class="col-12 bg-light rounded-2 border-3 border">
                         <div class="row m-1">
-                            <div class="col-5">
-                                <img src="./src/banner (3).png " class="img-fluid  bg-light border-0" alt="" srcset="">
-                                <i class="bi bi-heart position-absolute text-danger fs-5 d-none" id="heart_PID_5566" ></i>
+                            <div class="col-5 " id="product_img_PID_5599">
+                                <!-- D-none-->
+                                <img src="./src/PID_6699.png " class="img-fluid  bg-light border-0" alt="" srcset="">
+                                <i class="bi bi-heart position-absolute text-danger fs-5 d-none"
+                                    id="heart_PID_5599"></i>
                             </div>
-                            <div class="col-7">
+
+                            <!-- View  Product carosal -->
+                            <div class="col-12 col-lg-5 d-none" id="product_carosal_PID_5599">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./src/PID_6699.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./src/PID_6611.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./src/PID_6622.png" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col-7 " id="product_shortDescription_PID_5599">
+                                <!-- D-none-->
                                 <br>
-                                <span class="fw-bolder text-capitalize"> Apple AirPods </span> <br>
-                                <span class="text-opacity-25 text-black-50 text-capitalize ">2nd generation</span> <br>
-                                <span class="text-opacity-25 text-black-50 text-capitalize small">In-Ear</span> <br>
-                                
-                                <span >$129 </span>
+                                <span class="fw-bolder text-capitalize">Refurbished 27-inch iMac</span> <br>
+                                <span class="text-opacity-25 text-black-50 text-capitalize ">3.6GHz 8-core Intel Core
+                                    i9</span> <br>
+                                <span class="text-opacity-25 text-black-50 text-capitalize small">low budget hight
+                                    pefomerce</span> <br>
+
+                                <span>$1499</span>
 
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="row ">
                                             <button class="col-5 btn btn-outline-dark me-1 fw-bold">Add cart</button>
                                             <button class="col-6 btn btn-dark fw-bold">Buy Now</button>
-                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold">View Product</button>
+                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold"
+                                                onclick="viewProduct('PID_5599')">View Product</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- View  Product description -->
+                            <div class="col-12 col-lg-4 d-none " id="product_longDescription_PID_5599">
+                                <span class="fw-bolder fs-4 text-capitalize">Refurbished 27-inch iMac</span>
+                                <p class="mt-5 fw-bold text-black-50 ">
+                                    – 3.6GHz 8-core Intel Core i9 <br>
+                                    – 8GB RAM <br>
+                                    – 256GB SSD <br>
+                                    – WebCam/Bluetooth, Touch ID <br>
+                                    – 13.3″ Retine LED Blacklit Display <br>
+                                    – True Tone Technology <br>
+                                    – Space Gray Color <br>
+                                    – Mac OS <br>
+                                </p>
+                                <div class="row">
+                                    <div class="col-12 fw-bold">-Rose Gold</div>
+                                    <div class=" col-1 rounded-5 p-3 border border-dark m-1 "
+                                        style="background-color: #a7adba;"></div>
+                                    <div class=" col-1 rounded-5 p-3 border border-secondary m-1"
+                                        style="background-color: #FDDCD7;"></div>
+                                    <div class=" col-1 rounded-5 p-3 border border-secondary m-1"
+                                        style="background-color:  #aaa9ad;"></div>
+                                </div>
+                            </div>
+
+                            <!--View product purchus details -->
+                            <div class=" col-12 col-lg-3 border border-1 rounded-1 d-none "
+                                id="product_purchasDetails_PID_5599">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <div class="btn-close" onclick="closeProduct('PID_5599')"></div>
+                                    </div>
+                                </div>
+
+                                <div class="fw-bold fs-3 mt-1 ms-3">$699.00</div>
+                                <div class="text-black-50 mt-0 ms-4"><del>$799.00</del></div>
+                                <div class="mt-3">
+                                    <div class="fw-bold">Quantity</div>
+                                    <input class="ms-5" type="number" value="1">
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-1 ">
+                                        <i class="bi bi-truck fs-3 fw-bold  "></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <div class="row ms-2">
+                                            <div class="col-12 fw-bold text-success">inStock</div>
+                                            <div class="col-12 text-black-50">Delevery Free in colombo</div>
+                                            <div class="col-12 text-black-50">$1 Delevery out of colombo</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5">
+                                    <div class="col-12">
+                                        <div class="row ">
+                                            <button class="col-5 btn btn-outline-dark me-1 fw-bold">Add cart</button>
+                                            <button class="col-6 btn btn-dark fw-bold">Buy Now</button>
+                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold">Add to whish
+                                                List</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
+
                         </div>
 
                     </div>
                 </div>
             </div>
 
-             <!-- item  PID_5577-->
-             <div class="col-12 col-lg-4  mt-2" onmouseover="onmouseover_item('PID_5577')" onmouseout="onmouseout_item('PID_5577')">
+            <!-- item  PID_5500-->
+            <div class="col-12 col-lg-4  mt-2 " onmouseover="onmouseover_item('PID_1100')"
+                onmouseout="onmouseout_item('PID_5500')" id="PID_5500">
                 <div class="row">
-                    <div class="col-12 bg-light rounded-2 border-3 border ms-1">
-                    
+                    <div class="col-12 bg-light rounded-2 border-3 border">
                         <div class="row m-1">
-                            <div class="col-5">
-                                <img src="./src/banner (1).png " class="img-fluid  bg-light border-0" alt="" srcset="">
-                                <i class="bi bi-heart-fill position-absolute text-danger fs-5 d-none" id="heart_PID_5577"></i>
+                            <div class="col-5 " id="product_img_PID_5500">
+                                <!-- D-none-->
+                                <img src="./src/PID_6699.png " class="img-fluid  bg-light border-0" alt="" srcset="">
+                                <i class="bi bi-heart position-absolute text-danger fs-5 d-none"
+                                    id="heart_PID_5500"></i>
                             </div>
-                            <div class="col-7">
+
+                            <!-- View  Product carosal -->
+                            <div class="col-12 col-lg-5 d-none" id="product_carosal_PID_5500">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./src/PID_6699.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./src/PID_6611.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./src/PID_6622.png" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col-7 " id="product_shortDescription_PID_5500">
+                                <!-- D-none-->
                                 <br>
-                                <span class="fw-bolder text-capitalize"> Apple Mac mini </span> <br>
-                                <span class="text-opacity-25 text-black-50 text-capitalize ">M2 | 4GB | 256GB</span> <br>
-                                <span class="text-opacity-25 text-black-50 text-capitalize small">light-weight</span> <br>
-                                
-                                <span >$599 </span>
+                                <span class="fw-bolder text-capitalize">Refurbished 27-inch iMac</span> <br>
+                                <span class="text-opacity-25 text-black-50 text-capitalize ">3.6GHz 8-core Intel Core
+                                    i9</span> <br>
+                                <span class="text-opacity-25 text-black-50 text-capitalize small">low budget hight
+                                    pefomerce</span> <br>
+
+                                <span>$1499</span>
 
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="row ">
                                             <button class="col-5 btn btn-outline-dark me-1 fw-bold">Add cart</button>
                                             <button class="col-6 btn btn-dark fw-bold">Buy Now</button>
-                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold">View Product</button>
-                                            
+                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold"
+                                                onclick="viewProduct('PID_5500')">View Product</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- View  Product description -->
+                            <div class="col-12 col-lg-4 d-none " id="product_longDescription_PID_5500">
+                                <span class="fw-bolder fs-4 text-capitalize">Refurbished 27-inch iMac</span>
+                                <p class="mt-5 fw-bold text-black-50 ">
+                                    – 3.6GHz 8-core Intel Core i9 <br>
+                                    – 8GB RAM <br>
+                                    – 256GB SSD <br>
+                                    – WebCam/Bluetooth, Touch ID <br>
+                                    – 13.3″ Retine LED Blacklit Display <br>
+                                    – True Tone Technology <br>
+                                    – Space Gray Color <br>
+                                    – Mac OS <br>
+                                </p>
+                                <div class="row">
+                                    <div class="col-12 fw-bold">-Rose Gold</div>
+                                    <div class=" col-1 rounded-5 p-3 border border-dark m-1 "
+                                        style="background-color: #a7adba;"></div>
+                                    <div class=" col-1 rounded-5 p-3 border border-secondary m-1"
+                                        style="background-color: #FDDCD7;"></div>
+                                    <div class=" col-1 rounded-5 p-3 border border-secondary m-1"
+                                        style="background-color:  #aaa9ad;"></div>
+                                </div>
+                            </div>
+
+                            <!--View product purchus details -->
+                            <div class=" col-12 col-lg-3 border border-1 rounded-1 d-none "
+                                id="product_purchasDetails_PID_5500">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <div class="btn-close" onclick="closeProduct('PID_5500')"></div>
+                                    </div>
+                                </div>
+
+                                <div class="fw-bold fs-3 mt-1 ms-3">$699.00</div>
+                                <div class="text-black-50 mt-0 ms-4"><del>$799.00</del></div>
+                                <div class="mt-3">
+                                    <div class="fw-bold">Quantity</div>
+                                    <input class="ms-5" type="number" value="1">
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-1 ">
+                                        <i class="bi bi-truck fs-3 fw-bold  "></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <div class="row ms-2">
+                                            <div class="col-12 fw-bold text-success">inStock</div>
+                                            <div class="col-12 text-black-50">Delevery Free in colombo</div>
+                                            <div class="col-12 text-black-50">$1 Delevery out of colombo</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5">
+                                    <div class="col-12">
+                                        <div class="row ">
+                                            <button class="col-5 btn btn-outline-dark me-1 fw-bold">Add cart</button>
+                                            <button class="col-6 btn btn-dark fw-bold">Buy Now</button>
+                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold">Add to whish
+                                                List</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
+
                         </div>
 
                     </div>
                 </div>
             </div>
 
-            <!-- item PID_5588-->
-            <div class="col-12 col-lg-4  mt-2" onmouseover="onmouseover_item('PID_5588')" onmouseout="onmouseout_item('PID_5588')">
+            <!-- item  PID_5511-->
+            <div class="col-12 col-lg-4  mt-2 " onmouseover="onmouseover_item('PID_5511')"
+                onmouseout="onmouseout_item('PID_5511')" id="PID_5511">
                 <div class="row">
-                    <div class="col-12 bg-light rounded-2 border-3 border ms-2">
-                    
+                    <div class="col-12 bg-light rounded-2 border-3 border">
                         <div class="row m-1">
-                            <div class="col-5">
-                                <img src="./src/banner (2).png " class="img-fluid  bg-light border-0" alt="" srcset="">
-                                <i class="bi bi-heart position-absolute text-danger fs-5 d-none" id="heart_PID_5588"></i>
+                            <div class="col-5 " id="product_img_PID_5511">
+                                <!-- D-none-->
+                                <img src="./src/PID_6699.png " class="img-fluid  bg-light border-0" alt="" srcset="">
+                                <i class="bi bi-heart position-absolute text-danger fs-5 d-none"
+                                    id="heart_PID_5511"></i>
                             </div>
-                            <div class="col-7">
+
+                            <!-- View  Product carosal -->
+                            <div class="col-12 col-lg-5 d-none" id="product_carosal_PID_5511">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./src/PID_6699.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./src/PID_6611.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./src/PID_6622.png" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col-7 " id="product_shortDescription_PID_5511">
+                                <!-- D-none-->
                                 <br>
-                                <span class="fw-bolder text-capitalize"> Apple ipods max </span> <br>
-                                <span class="text-opacity-25 text-black-50 text-capitalize ">2nd generation</span> <br>
-                                <span class="text-opacity-25 text-black-50 text-capitalize small">small but loud</span> <br>
-                                
-                                <span >$599 </span>
+                                <span class="fw-bolder text-capitalize">Refurbished 27-inch iMac</span> <br>
+                                <span class="text-opacity-25 text-black-50 text-capitalize ">3.6GHz 8-core Intel Core
+                                    i9</span> <br>
+                                <span class="text-opacity-25 text-black-50 text-capitalize small">low budget hight
+                                    pefomerce</span> <br>
+
+                                <span>$1499</span>
 
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="row ">
                                             <button class="col-5 btn btn-outline-dark me-1 fw-bold">Add cart</button>
                                             <button class="col-6 btn btn-dark fw-bold">Buy Now</button>
-                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold">View Product</button>
+                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold"
+                                                onclick="viewProduct('PID_5511')">View Product</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- View  Product description -->
+                            <div class="col-12 col-lg-4 d-none " id="product_longDescription_PID_5511">
+                                <span class="fw-bolder fs-4 text-capitalize">Refurbished 27-inch iMac</span>
+                                <p class="mt-5 fw-bold text-black-50 ">
+                                    – 3.6GHz 8-core Intel Core i9 <br>
+                                    – 8GB RAM <br>
+                                    – 256GB SSD <br>
+                                    – WebCam/Bluetooth, Touch ID <br>
+                                    – 13.3″ Retine LED Blacklit Display <br>
+                                    – True Tone Technology <br>
+                                    – Space Gray Color <br>
+                                    – Mac OS <br>
+                                </p>
+                                <div class="row">
+                                    <div class="col-12 fw-bold">-Rose Gold</div>
+                                    <div class=" col-1 rounded-5 p-3 border border-dark m-1 "
+                                        style="background-color: #a7adba;"></div>
+                                    <div class=" col-1 rounded-5 p-3 border border-secondary m-1"
+                                        style="background-color: #FDDCD7;"></div>
+                                    <div class=" col-1 rounded-5 p-3 border border-secondary m-1"
+                                        style="background-color:  #aaa9ad;"></div>
+                                </div>
+                            </div>
+
+                            <!--View product purchus details -->
+                            <div class=" col-12 col-lg-3 border border-1 rounded-1 d-none "
+                                id="product_purchasDetails_PID_5511">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <div class="btn-close" onclick="closeProduct('PID_5511')"></div>
+                                    </div>
+                                </div>
+
+                                <div class="fw-bold fs-3 mt-1 ms-3">$699.00</div>
+                                <div class="text-black-50 mt-0 ms-4"><del>$799.00</del></div>
+                                <div class="mt-3">
+                                    <div class="fw-bold">Quantity</div>
+                                    <input class="ms-5" type="number" value="1">
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-1 ">
+                                        <i class="bi bi-truck fs-3 fw-bold  "></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <div class="row ms-2">
+                                            <div class="col-12 fw-bold text-success">inStock</div>
+                                            <div class="col-12 text-black-50">Delevery Free in colombo</div>
+                                            <div class="col-12 text-black-50">$1 Delevery out of colombo</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5">
+                                    <div class="col-12">
+                                        <div class="row ">
+                                            <button class="col-5 btn btn-outline-dark me-1 fw-bold">Add cart</button>
+                                            <button class="col-6 btn btn-dark fw-bold">Buy Now</button>
+                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold">Add to whish
+                                                List</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
+
                         </div>
 
                     </div>
@@ -378,212 +634,423 @@
         </div>
 
         <!-- Computers-->
-        <span class="fw-bold fs-3 text-capitalize">Computers</span>
+        <span id="computer" class="fw-bold fs-3 text-capitalize">Computers</span>
         <div class="row">
-            
+
             <!-- item  PID_6699-->
-            <div class="col-12 col-lg-4  mt-2 " onmouseover="onmouseover_item('PID_6699')" onmouseout="onmouseout_item('PID_6699')" id="PID_6699">
+            <div class="col-12 col-lg-4  mt-2 " onmouseover="onmouseover_item('PID_6699')"
+                onmouseout="onmouseout_item('PID_6699')" id="PID_6699">
                 <div class="row">
                     <div class="col-12 bg-light rounded-2 border-3 border">
                         <div class="row m-1">
-                            <div class="col-5">
+                            <div class="col-5 " id="product_img_PID_6699">
+                                <!-- D-none-->
                                 <img src="./src/PID_6699.png " class="img-fluid  bg-light border-0" alt="" srcset="">
-                                <i class="bi bi-heart position-absolute text-danger fs-5 d-none" id="heart_PID_6699" ></i>
+                                <i class="bi bi-heart position-absolute text-danger fs-5 d-none"
+                                    id="heart_PID_6699"></i>
                             </div>
-                            <div class="col-7">
+
+                            <!-- View  Product carosal -->
+                            <div class="col-12 col-lg-5 d-none" id="product_carosal_PID_6699">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./src/PID_6699.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./src/PID_6611.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./src/PID_6622.png" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col-7 " id="product_shortDescription_PID_6699">
+                                <!-- D-none-->
                                 <br>
                                 <span class="fw-bolder text-capitalize">Refurbished 27-inch iMac</span> <br>
-                                <span class="text-opacity-25 text-black-50 text-capitalize ">3.6GHz 8-core Intel Core i9</span> <br>
-                                <span class="text-opacity-25 text-black-50 text-capitalize small">low budget hight pefomerce</span> <br>
-                                
-                                <span >$1499</span>
+                                <span class="text-opacity-25 text-black-50 text-capitalize ">3.6GHz 8-core Intel Core
+                                    i9</span> <br>
+                                <span class="text-opacity-25 text-black-50 text-capitalize small">low budget hight
+                                    pefomerce</span> <br>
+
+                                <span>$1499</span>
 
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="row ">
                                             <button class="col-5 btn btn-outline-dark me-1 fw-bold">Add cart</button>
                                             <button class="col-6 btn btn-dark fw-bold">Buy Now</button>
-                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold">View Product</button>
+                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold"
+                                                onclick="viewProduct('PID_6699')">View Product</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                    </div>
-                </div>
-            </div>
-
-             <!-- item  PID_6611-->
-             <div class="col-12 col-lg-4  mt-2" onmouseover="onmouseover_item('PID_6611')" onmouseout="onmouseout_item('PID_6611')">
-                <div class="row">
-                    <div class="col-12 bg-light rounded-2 border-3 border ms-1">
-                    
-                        <div class="row m-1">
-                            <div class="col-5">
-                                <img src="./src/PID_6611.png" class="img-fluid  bg-light border-0" alt="" srcset="">
-                                <i class="bi bi-heart-fill position-absolute text-danger fs-5 d-none" id="heart_PID_6611"></i>
-                            </div>
-                            <div class="col-7">
-                                <br>
-                                <span class="fw-bolder text-capitalize"> iMac M1 2020 </span> <br>
-                                <span class="text-opacity-25 text-black-50 text-capitalize ">M2 | 16GB | 256GB</span> <br>
-                                <span class="text-opacity-25 text-black-50 text-capitalize small">Fast Work</span> <br>
-                                
-                                <span >$2599 </span>
-
+                            <!-- View  Product description -->
+                            <div class="col-12 col-lg-4 d-none " id="product_longDescription_PID_6699">
+                                <span class="fw-bolder fs-4 text-capitalize">Refurbished 27-inch iMac</span>
+                                <p class="mt-5 fw-bold text-black-50 ">
+                                    – 3.6GHz 8-core Intel Core i9 <br>
+                                    – 8GB RAM <br>
+                                    – 256GB SSD <br>
+                                    – WebCam/Bluetooth, Touch ID <br>
+                                    – 13.3″ Retine LED Blacklit Display <br>
+                                    – True Tone Technology <br>
+                                    – Space Gray Color <br>
+                                    – Mac OS <br>
+                                </p>
                                 <div class="row">
+                                    <div class="col-12 fw-bold">-Rose Gold</div>
+                                    <div class=" col-1 rounded-5 p-3 border border-dark m-1 "
+                                        style="background-color: #a7adba;"></div>
+                                    <div class=" col-1 rounded-5 p-3 border border-secondary m-1"
+                                        style="background-color: #FDDCD7;"></div>
+                                    <div class=" col-1 rounded-5 p-3 border border-secondary m-1"
+                                        style="background-color:  #aaa9ad;"></div>
+                                </div>
+                            </div>
+
+                            <!--View product purchus details -->
+                            <div class=" col-12 col-lg-3 border border-1 rounded-1 d-none "
+                                id="product_purchasDetails_PID_6699">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <div class="btn-close" onclick="closeProduct('PID_6699')"></div>
+                                    </div>
+                                </div>
+
+                                <div class="fw-bold fs-3 mt-1 ms-3">$699.00</div>
+                                <div class="text-black-50 mt-0 ms-4"><del>$799.00</del></div>
+                                <div class="mt-3">
+                                    <div class="fw-bold">Quantity</div>
+                                    <input class="ms-5" type="number" value="1">
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-1 ">
+                                        <i class="bi bi-truck fs-3 fw-bold  "></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <div class="row ms-2">
+                                            <div class="col-12 fw-bold text-success">inStock</div>
+                                            <div class="col-12 text-black-50">Delevery Free in colombo</div>
+                                            <div class="col-12 text-black-50">$1 Delevery out of colombo</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5">
                                     <div class="col-12">
                                         <div class="row ">
                                             <button class="col-5 btn btn-outline-dark me-1 fw-bold">Add cart</button>
                                             <button class="col-6 btn btn-dark fw-bold">Buy Now</button>
-                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold">View Product</button>
-                                            
+                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold">Add to whish
+                                                List</button>
                                         </div>
                                     </div>
                                 </div>
+
+
+
+
                             </div>
+
+
                         </div>
 
                     </div>
                 </div>
             </div>
 
-            <!-- item PID_6622-->
-            <div class="col-12 col-lg-4  mt-2" onmouseover="onmouseover_item('PID_6622')" onmouseout="onmouseout_item('PID_6622')">
-                <div class="row">
-                    <div class="col-12 bg-light rounded-2 border-3 border ms-2">
-                    
-                        <div class="row m-1">
-                            <div class="col-5">
-                                <img src="./src/PID_6622.png " class="img-fluid  bg-light border-0" alt="" srcset="">
-                                <i class="bi bi-heart position-absolute text-danger fs-5 d-none" id="heart_PID_6622"></i>
-                            </div>
-                            <div class="col-7">
-                                <br>
-                                <span class="fw-bolder text-capitalize"> HP all in one</span> <br>
-                                <span class="text-opacity-25 text-black-50 text-capitalize ">i9 11th gen 16GB 1TB</span> <br>
-                                <span class="text-opacity-25 text-black-50 text-capitalize small">work station</span> <br>
-                                
-                                <span >$599 </span>
-
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="row ">
-                                            <button class="col-5 btn btn-outline-dark me-1 fw-bold">Add cart</button>
-                                            <button class="col-6 btn btn-dark fw-bold">Buy Now</button>
-                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold">View Product</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- item  PID_6633-->
-            <div class="col-12 col-lg-4  mt-2 " onmouseover="onmouseover_item('PID_6633')" onmouseout="onmouseout_item('PID_6633')" id="PID_6633">
+            <!-- item  PID_1100-->
+            <div class="col-12 col-lg-4  mt-2 " onmouseover="onmouseover_item('PID_1100')"
+                onmouseout="onmouseout_item('PID_1100')" id="PID_1100">
                 <div class="row">
                     <div class="col-12 bg-light rounded-2 border-3 border">
                         <div class="row m-1">
-                            <div class="col-5">
+                            <div class="col-5 " id="product_img_PID_1100">
+                                <!-- D-none-->
                                 <img src="./src/PID_6699.png " class="img-fluid  bg-light border-0" alt="" srcset="">
-                                <i class="bi bi-heart position-absolute text-danger fs-5 d-none" id="heart_PID_6633" ></i>
+                                <i class="bi bi-heart position-absolute text-danger fs-5 d-none"
+                                    id="heart_PID_1100"></i>
                             </div>
-                            <div class="col-7">
+
+                            <!-- View  Product carosal -->
+                            <div class="col-12 col-lg-5 d-none" id="product_carosal_PID_1100">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./src/PID_6699.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./src/PID_6611.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./src/PID_6622.png" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col-7 " id="product_shortDescription_PID_1100">
+                                <!-- D-none-->
                                 <br>
                                 <span class="fw-bolder text-capitalize">Refurbished 27-inch iMac</span> <br>
-                                <span class="text-opacity-25 text-black-50 text-capitalize ">3.6GHz 8-core Intel Core i9</span> <br>
-                                <span class="text-opacity-25 text-black-50 text-capitalize small">low budget hight pefomerce</span> <br>
-                                
-                                <span >$1499</span>
+                                <span class="text-opacity-25 text-black-50 text-capitalize ">3.6GHz 8-core Intel Core
+                                    i9</span> <br>
+                                <span class="text-opacity-25 text-black-50 text-capitalize small">low budget hight
+                                    pefomerce</span> <br>
+
+                                <span>$1499</span>
 
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="row ">
                                             <button class="col-5 btn btn-outline-dark me-1 fw-bold">Add cart</button>
                                             <button class="col-6 btn btn-dark fw-bold">Buy Now</button>
-                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold">View Product</button>
+                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold"
+                                                onclick="viewProduct('PID_1100')">View Product</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- View  Product description -->
+                            <div class="col-12 col-lg-4 d-none " id="product_longDescription_PID_1100">
+                                <span class="fw-bolder fs-4 text-capitalize">Refurbished 27-inch iMac</span>
+                                <p class="mt-5 fw-bold text-black-50 ">
+                                    – 3.6GHz 8-core Intel Core i9 <br>
+                                    – 8GB RAM <br>
+                                    – 256GB SSD <br>
+                                    – WebCam/Bluetooth, Touch ID <br>
+                                    – 13.3″ Retine LED Blacklit Display <br>
+                                    – True Tone Technology <br>
+                                    – Space Gray Color <br>
+                                    – Mac OS <br>
+                                </p>
+                                <div class="row">
+                                    <div class="col-12 fw-bold">-Rose Gold</div>
+                                    <div class=" col-1 rounded-5 p-3 border border-dark m-1 "
+                                        style="background-color: #a7adba;"></div>
+                                    <div class=" col-1 rounded-5 p-3 border border-secondary m-1"
+                                        style="background-color: #FDDCD7;"></div>
+                                    <div class=" col-1 rounded-5 p-3 border border-secondary m-1"
+                                        style="background-color:  #aaa9ad;"></div>
+                                </div>
+                            </div>
+
+                            <!--View product purchus details -->
+                            <div class=" col-12 col-lg-3 border border-1 rounded-1 d-none "
+                                id="product_purchasDetails_PID_1100">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <div class="btn-close" onclick="closeProduct('PID_1100')"></div>
+                                    </div>
+                                </div>
+
+                                <div class="fw-bold fs-3 mt-1 ms-3">$699.00</div>
+                                <div class="text-black-50 mt-0 ms-4"><del>$799.00</del></div>
+                                <div class="mt-3">
+                                    <div class="fw-bold">Quantity</div>
+                                    <input class="ms-5" type="number" value="1">
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-1 ">
+                                        <i class="bi bi-truck fs-3 fw-bold  "></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <div class="row ms-2">
+                                            <div class="col-12 fw-bold text-success">inStock</div>
+                                            <div class="col-12 text-black-50">Delevery Free in colombo</div>
+                                            <div class="col-12 text-black-50">$1 Delevery out of colombo</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5">
+                                    <div class="col-12">
+                                        <div class="row ">
+                                            <button class="col-5 btn btn-outline-dark me-1 fw-bold">Add cart</button>
+                                            <button class="col-6 btn btn-dark fw-bold">Buy Now</button>
+                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold">Add to whish
+                                                List</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
+
                         </div>
 
                     </div>
                 </div>
             </div>
 
-             <!-- item  PID_6644-->
-             <div class="col-12 col-lg-4  mt-2" onmouseover="onmouseover_item('PID_6644')" onmouseout="onmouseout_item('PID_6644')">
+            <!-- item  PID_1111-->
+            <div class="col-12 col-lg-4  mt-2 " onmouseover="onmouseover_item('PID_1111')"
+                onmouseout="onmouseout_item('PID_1111')" id="PID_1111">
                 <div class="row">
-                    <div class="col-12 bg-light rounded-2 border-3 border ms-1">
-                    
+                    <div class="col-12 bg-light rounded-2 border-3 border">
                         <div class="row m-1">
-                            <div class="col-5">
-                                <img src="./src/PID_6611.png" class="img-fluid  bg-light border-0" alt="" srcset="">
-                                <i class="bi bi-heart-fill position-absolute text-danger fs-5 d-none" id="heart_PID_6644"></i>
+                            <div class="col-5 " id="product_img_PID_1111">
+                                <!-- D-none-->
+                                <img src="./src/PID_6699.png " class="img-fluid  bg-light border-0" alt="" srcset="">
+                                <i class="bi bi-heart position-absolute text-danger fs-5 d-none"
+                                    id="heart_PID_1111"></i>
                             </div>
-                            <div class="col-7">
+
+                            <!-- View  Product carosal -->
+                            <div class="col-12 col-lg-5 d-none" id="product_carosal_PID_1111">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./src/PID_6699.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./src/PID_6611.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./src/PID_6622.png" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col-7 " id="product_shortDescription_PID_1111">
+                                <!-- D-none-->
                                 <br>
-                                <span class="fw-bolder text-capitalize"> iMac M1 2020 </span> <br>
-                                <span class="text-opacity-25 text-black-50 text-capitalize ">M2 | 16GB | 256GB</span> <br>
-                                <span class="text-opacity-25 text-black-50 text-capitalize small">Fast Work</span> <br>
-                                
-                                <span >$2599 </span>
+                                <span class="fw-bolder text-capitalize">Refurbished 27-inch iMac</span> <br>
+                                <span class="text-opacity-25 text-black-50 text-capitalize ">3.6GHz 8-core Intel Core
+                                    i9</span> <br>
+                                <span class="text-opacity-25 text-black-50 text-capitalize small">low budget hight
+                                    pefomerce</span> <br>
+
+                                <span>$1499</span>
 
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="row ">
                                             <button class="col-5 btn btn-outline-dark me-1 fw-bold">Add cart</button>
                                             <button class="col-6 btn btn-dark fw-bold">Buy Now</button>
-                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold">View Product</button>
-                                            
+                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold"
+                                                onclick="viewProduct('PID_1111')">View Product</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                    </div>
-                </div>
-            </div>
-
-            <!-- item PID_6655-->
-            <div class="col-12 col-lg-4  mt-2" onmouseover="onmouseover_item('PID_6655')" onmouseout="onmouseout_item('PID_6655')">
-                <div class="row">
-                    <div class="col-12 bg-light rounded-2 border-3 border ms-2">
-                    
-                        <div class="row m-1">
-                            <div class="col-5">
-                                <img src="./src/PID_6622.png " class="img-fluid  bg-light border-0" alt="" srcset="">
-                                <i class="bi bi-heart position-absolute text-danger fs-5 d-none" id="heart_PID_6655"></i>
-                            </div>
-                            <div class="col-7">
-                                <br>
-                                <span class="fw-bolder text-capitalize"> HP all in one</span> <br>
-                                <span class="text-opacity-25 text-black-50 text-capitalize ">i9 11th gen 16GB 1TB</span> <br>
-                                <span class="text-opacity-25 text-black-50 text-capitalize small">work station</span> <br>
-                                
-                                <span >$599 </span>
-
+                            <!-- View  Product description -->
+                            <div class="col-12 col-lg-4 d-none " id="product_longDescription_PID_1111">
+                                <span class="fw-bolder fs-4 text-capitalize">Refurbished 27-inch iMac</span>
+                                <p class="mt-5 fw-bold text-black-50 ">
+                                    – 3.6GHz 8-core Intel Core i9 <br>
+                                    – 8GB RAM <br>
+                                    – 256GB SSD <br>
+                                    – WebCam/Bluetooth, Touch ID <br>
+                                    – 13.3″ Retine LED Blacklit Display <br>
+                                    – True Tone Technology <br>
+                                    – Space Gray Color <br>
+                                    – Mac OS <br>
+                                </p>
                                 <div class="row">
+                                    <div class="col-12 fw-bold">-Rose Gold</div>
+                                    <div class=" col-1 rounded-5 p-3 border border-dark m-1 "
+                                        style="background-color: #a7adba;"></div>
+                                    <div class=" col-1 rounded-5 p-3 border border-secondary m-1"
+                                        style="background-color: #FDDCD7;"></div>
+                                    <div class=" col-1 rounded-5 p-3 border border-secondary m-1"
+                                        style="background-color:  #aaa9ad;"></div>
+                                </div>
+                            </div>
+
+                            <!--View product purchus details -->
+                            <div class=" col-12 col-lg-3 border border-1 rounded-1 d-none "
+                                id="product_purchasDetails_PID_1111">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <div class="btn-close" onclick="closeProduct('PID_1111')"></div>
+                                    </div>
+                                </div>
+
+                                <div class="fw-bold fs-3 mt-1 ms-3">$699.00</div>
+                                <div class="text-black-50 mt-0 ms-4"><del>$799.00</del></div>
+                                <div class="mt-3">
+                                    <div class="fw-bold">Quantity</div>
+                                    <input class="ms-5" type="number" value="1">
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-1 ">
+                                        <i class="bi bi-truck fs-3 fw-bold  "></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <div class="row ms-2">
+                                            <div class="col-12 fw-bold text-success">inStock</div>
+                                            <div class="col-12 text-black-50">Delevery Free in colombo</div>
+                                            <div class="col-12 text-black-50">$1 Delevery out of colombo</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5">
                                     <div class="col-12">
                                         <div class="row ">
                                             <button class="col-5 btn btn-outline-dark me-1 fw-bold">Add cart</button>
                                             <button class="col-6 btn btn-dark fw-bold">Buy Now</button>
-                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold">View Product</button>
+                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold">Add to whish
+                                                List</button>
                                         </div>
                                     </div>
                                 </div>
+
+
+
+
                             </div>
+
+
                         </div>
 
                     </div>
                 </div>
             </div>
+
 
             <div class="col-12 d-flex justify-content-center align-items-center">
                 <button class="btn btn-light mt-2 fw-bold"> See More </button>
@@ -592,201 +1059,519 @@
 
         </div>
 
-         <!-- Laptops-->
-         <span class="fw-bold fs-3 text-capitalize">Laptops</span>
-         <div class="row">
-             
-             <!-- item  PID_7799-->
-             <div class="col-12 col-lg-4  mt-2 " onmouseover="onmouseover_item('PID_7799')" onmouseout="onmouseout_item('PID_7799')" id="PID_7799">
-                 <div class="row">
-                     <div class="col-12 bg-light rounded-2 border-3 border">
-                         <div class="row m-1">
-                             <div class="col-5">
-                                 <img src="./src/PID_6699.png " class="img-fluid  bg-light border-0" alt="" srcset="">
-                                 <i class="bi bi-heart position-absolute text-danger fs-5 d-none" id="heart_PID_7799" ></i>
-                             </div>
-                             <div class="col-7">
-                                 <br>
-                                 <span class="fw-bolder text-capitalize">Refurbished 27-inch iMac</span> <br>
-                                 <span class="text-opacity-25 text-black-50 text-capitalize ">3.6GHz 8-core Intel Core i9</span> <br>
-                                 <span class="text-opacity-25 text-black-50 text-capitalize small">low budget hight pefomerce</span> <br>
-                                 
-                                 <span >$1499</span>
- 
-                                 <div class="row">
-                                     <div class="col-12">
-                                         <div class="row ">
-                                             <button class="col-5 btn btn-outline-dark me-1 fw-bold">Add cart</button>
-                                             <button class="col-6 btn btn-dark fw-bold">Buy Now</button>
-                                             <button class="col-11 btn btn-outline-secondary mt-1 fw-bold">View Product</button>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
- 
-                     </div>
-                 </div>
-             </div>
- 
-              <!-- item  PID_8811-->
-              <div class="col-12 col-lg-4  mt-2" onmouseover="onmouseover_item('PID_8811')" onmouseout="onmouseout_item('PID_8811')">
-                 <div class="row">
-                     <div class="col-12 bg-light rounded-2 border-3 border ms-1">
-                     
-                         <div class="row m-1">
-                             <div class="col-5">
-                                 <img src="./src/PID_6611.png" class="img-fluid  bg-light border-0" alt="" srcset="">
-                                 <i class="bi bi-heart-fill position-absolute text-danger fs-5 d-none" id="heart_PID_8811"></i>
-                             </div>
-                             <div class="col-7">
-                                 <br>
-                                 <span class="fw-bolder text-capitalize"> iMac M1 2020 </span> <br>
-                                 <span class="text-opacity-25 text-black-50 text-capitalize ">M2 | 16GB | 256GB</span> <br>
-                                 <span class="text-opacity-25 text-black-50 text-capitalize small">Fast Work</span> <br>
-                                 
-                                 <span >$2599 </span>
- 
-                                 <div class="row">
-                                     <div class="col-12">
-                                         <div class="row ">
-                                             <button class="col-5 btn btn-outline-dark me-1 fw-bold">Add cart</button>
-                                             <button class="col-6 btn btn-dark fw-bold">Buy Now</button>
-                                             <button class="col-11 btn btn-outline-secondary mt-1 fw-bold">View Product</button>
-                                             
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
- 
-                     </div>
-                 </div>
-             </div>
- 
-             <!-- item PID_9922-->
-             <div class="col-12 col-lg-4  mt-2" onmouseover="onmouseover_item('PID_9922')" onmouseout="onmouseout_item('PID_9922')">
-                 <div class="row">
-                     <div class="col-12 bg-light rounded-2 border-3 border ms-2">
-                     
-                         <div class="row m-1">
-                             <div class="col-5">
-                                 <img src="./src/PID_6622.png " class="img-fluid  bg-light border-0" alt="" srcset="">
-                                 <i class="bi bi-heart position-absolute text-danger fs-5 d-none" id="heart_PID_9922"></i>
-                             </div>
-                             <div class="col-7">
-                                 <br>
-                                 <span class="fw-bolder text-capitalize"> HP all in one</span> <br>
-                                 <span class="text-opacity-25 text-black-50 text-capitalize ">i9 11th gen 16GB 1TB</span> <br>
-                                 <span class="text-opacity-25 text-black-50 text-capitalize small">work station</span> <br>
-                                 
-                                 <span >$599 </span>
- 
-                                 <div class="row">
-                                     <div class="col-12">
-                                         <div class="row ">
-                                             <button class="col-5 btn btn-outline-dark me-1 fw-bold">Add cart</button>
-                                             <button class="col-6 btn btn-dark fw-bold">Buy Now</button>
-                                             <button class="col-11 btn btn-outline-secondary mt-1 fw-bold">View Product</button>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
- 
-                     </div>
-                 </div>
-             </div>
- 
-             
-             
-          
-             <div class="col-12 d-flex justify-content-center align-items-center">
-                 <button class="btn btn-light mt-2 fw-bold"> See More </button>
-             </div>
- 
- 
-         </div>
+        <!-- Laptops-->
+        <span id="laptop" class="fw-bold fs-3 text-capitalize">Laptops</span>
+        <div class="row">
 
-         <div class="row">
+            <!-- item  PID_2299-->
+            <div class="col-12 col-lg-4  mt-2 " onmouseover="onmouseover_item('PID_2299')"
+                onmouseout="onmouseout_item('PID_2299')" id="PID_2299">
+                <div class="row">
+                    <div class="col-12 bg-light rounded-2 border-3 border">
+                        <div class="row m-1">
+                            <div class="col-5 " id="product_img_PID_2299">
+                                <!-- D-none-->
+                                <img src="./src/PID_6699.png " class="img-fluid  bg-light border-0" alt="" srcset="">
+                                <i class="bi bi-heart position-absolute text-danger fs-5 d-none"
+                                    id="heart_PID_2299"></i>
+                            </div>
+
+                            <!-- View  Product carosal -->
+                            <div class="col-12 col-lg-5 d-none" id="product_carosal_PID_2299">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./src/PID_6699.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./src/PID_6611.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./src/PID_6622.png" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col-7 " id="product_shortDescription_PID_2299">
+                                <!-- D-none-->
+                                <br>
+                                <span class="fw-bolder text-capitalize">Refurbished 27-inch iMac</span> <br>
+                                <span class="text-opacity-25 text-black-50 text-capitalize ">3.6GHz 8-core Intel Core
+                                    i9</span> <br>
+                                <span class="text-opacity-25 text-black-50 text-capitalize small">low budget hight
+                                    pefomerce</span> <br>
+
+                                <span>$1499</span>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row ">
+                                            <button class="col-5 btn btn-outline-dark me-1 fw-bold">Add cart</button>
+                                            <button class="col-6 btn btn-dark fw-bold">Buy Now</button>
+                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold"
+                                                onclick="viewProduct('PID_2299')">View Product</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- View  Product description -->
+                            <div class="col-12 col-lg-4 d-none " id="product_longDescription_PID_2299">
+                                <span class="fw-bolder fs-4 text-capitalize">Refurbished 27-inch iMac</span>
+                                <p class="mt-5 fw-bold text-black-50 ">
+                                    – 3.6GHz 8-core Intel Core i9 <br>
+                                    – 8GB RAM <br>
+                                    – 256GB SSD <br>
+                                    – WebCam/Bluetooth, Touch ID <br>
+                                    – 13.3″ Retine LED Blacklit Display <br>
+                                    – True Tone Technology <br>
+                                    – Space Gray Color <br>
+                                    – Mac OS <br>
+                                </p>
+                                <div class="row">
+                                    <div class="col-12 fw-bold">-Rose Gold</div>
+                                    <div class=" col-1 rounded-5 p-3 border border-dark m-1 "
+                                        style="background-color: #a7adba;"></div>
+                                    <div class=" col-1 rounded-5 p-3 border border-secondary m-1"
+                                        style="background-color: #FDDCD7;"></div>
+                                    <div class=" col-1 rounded-5 p-3 border border-secondary m-1"
+                                        style="background-color:  #aaa9ad;"></div>
+                                </div>
+                            </div>
+
+                            <!--View product purchus details -->
+                            <div class=" col-12 col-lg-3 border border-1 rounded-1 d-none "
+                                id="product_purchasDetails_PID_2299">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <div class="btn-close" onclick="closeProduct('PID_2299')"></div>
+                                    </div>
+                                </div>
+
+                                <div class="fw-bold fs-3 mt-1 ms-3">$699.00</div>
+                                <div class="text-black-50 mt-0 ms-4"><del>$799.00</del></div>
+                                <div class="mt-3">
+                                    <div class="fw-bold">Quantity</div>
+                                    <input class="ms-5" type="number" value="1">
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-1 ">
+                                        <i class="bi bi-truck fs-3 fw-bold  "></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <div class="row ms-2">
+                                            <div class="col-12 fw-bold text-success">inStock</div>
+                                            <div class="col-12 text-black-50">Delevery Free in colombo</div>
+                                            <div class="col-12 text-black-50">$1 Delevery out of colombo</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5">
+                                    <div class="col-12">
+                                        <div class="row ">
+                                            <button class="col-5 btn btn-outline-dark me-1 fw-bold">Add cart</button>
+                                            <button class="col-6 btn btn-dark fw-bold">Buy Now</button>
+                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold">Add to whish
+                                                List</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- item  PID_2200-->
+            <div class="col-12 col-lg-4  mt-2 " onmouseover="onmouseover_item('PID_2200')"
+                onmouseout="onmouseout_item('PID_2200')" id="PID_2200">
+                <div class="row">
+                    <div class="col-12 bg-light rounded-2 border-3 border">
+                        <div class="row m-1">
+                            <div class="col-5 " id="product_img_PID_2200">
+                                <!-- D-none-->
+                                <img src="./src/PID_6699.png " class="img-fluid  bg-light border-0" alt="" srcset="">
+                                <i class="bi bi-heart position-absolute text-danger fs-5 d-none"
+                                    id="heart_PID_2200"></i>
+                            </div>
+
+                            <!-- View  Product carosal -->
+                            <div class="col-12 col-lg-5 d-none" id="product_carosal_PID_2200">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./src/PID_6699.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./src/PID_6611.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./src/PID_6622.png" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col-7 " id="product_shortDescription_PID_2200">
+                                <!-- D-none-->
+                                <br>
+                                <span class="fw-bolder text-capitalize">Refurbished 27-inch iMac</span> <br>
+                                <span class="text-opacity-25 text-black-50 text-capitalize ">3.6GHz 8-core Intel Core
+                                    i9</span> <br>
+                                <span class="text-opacity-25 text-black-50 text-capitalize small">low budget hight
+                                    pefomerce</span> <br>
+
+                                <span>$1499</span>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row ">
+                                            <button class="col-5 btn btn-outline-dark me-1 fw-bold">Add cart</button>
+                                            <button class="col-6 btn btn-dark fw-bold">Buy Now</button>
+                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold"
+                                                onclick="viewProduct('PID_2200')">View Product</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- View  Product description -->
+                            <div class="col-12 col-lg-4 d-none " id="product_longDescription_PID_2200">
+                                <span class="fw-bolder fs-4 text-capitalize">Refurbished 27-inch iMac</span>
+                                <p class="mt-5 fw-bold text-black-50 ">
+                                    – 3.6GHz 8-core Intel Core i9 <br>
+                                    – 8GB RAM <br>
+                                    – 256GB SSD <br>
+                                    – WebCam/Bluetooth, Touch ID <br>
+                                    – 13.3″ Retine LED Blacklit Display <br>
+                                    – True Tone Technology <br>
+                                    – Space Gray Color <br>
+                                    – Mac OS <br>
+                                </p>
+                                <div class="row">
+                                    <div class="col-12 fw-bold">-Rose Gold</div>
+                                    <div class=" col-1 rounded-5 p-3 border border-dark m-1 "
+                                        style="background-color: #a7adba;"></div>
+                                    <div class=" col-1 rounded-5 p-3 border border-secondary m-1"
+                                        style="background-color: #FDDCD7;"></div>
+                                    <div class=" col-1 rounded-5 p-3 border border-secondary m-1"
+                                        style="background-color:  #aaa9ad;"></div>
+                                </div>
+                            </div>
+
+                            <!--View product purchus details -->
+                            <div class=" col-12 col-lg-3 border border-1 rounded-1 d-none "
+                                id="product_purchasDetails_PID_2200">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <div class="btn-close" onclick="closeProduct('PID_2200')"></div>
+                                    </div>
+                                </div>
+
+                                <div class="fw-bold fs-3 mt-1 ms-3">$699.00</div>
+                                <div class="text-black-50 mt-0 ms-4"><del>$799.00</del></div>
+                                <div class="mt-3">
+                                    <div class="fw-bold">Quantity</div>
+                                    <input class="ms-5" type="number" value="1">
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-1 ">
+                                        <i class="bi bi-truck fs-3 fw-bold  "></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <div class="row ms-2">
+                                            <div class="col-12 fw-bold text-success">inStock</div>
+                                            <div class="col-12 text-black-50">Delevery Free in colombo</div>
+                                            <div class="col-12 text-black-50">$1 Delevery out of colombo</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5">
+                                    <div class="col-12">
+                                        <div class="row ">
+                                            <button class="col-5 btn btn-outline-dark me-1 fw-bold">Add cart</button>
+                                            <button class="col-6 btn btn-dark fw-bold">Buy Now</button>
+                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold">Add to whish
+                                                List</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- item  PID_2211-->
+            <div class="col-12 col-lg-4  mt-2 " onmouseover="onmouseover_item('PID_2211')"
+                onmouseout="onmouseout_item('PID_2211')" id="PID_2211">
+                <div class="row">
+                    <div class="col-12 bg-light rounded-2 border-3 border">
+                        <div class="row m-1">
+                            <div class="col-5 " id="product_img_PID_2211">
+                                <!-- D-none-->
+                                <img src="./src/PID_6699.png " class="img-fluid  bg-light border-0" alt="" srcset="">
+                                <i class="bi bi-heart position-absolute text-danger fs-5 d-none"
+                                    id="heart_PID_2211"></i>
+                            </div>
+
+                            <!-- View  Product carosal -->
+                            <div class="col-12 col-lg-5 d-none" id="product_carosal_PID_2211">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./src/PID_6699.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./src/PID_6611.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./src/PID_6622.png" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col-7 " id="product_shortDescription_PID_2211">
+                                <!-- D-none-->
+                                <br>
+                                <span class="fw-bolder text-capitalize">Refurbished 27-inch iMac</span> <br>
+                                <span class="text-opacity-25 text-black-50 text-capitalize ">3.6GHz 8-core Intel Core
+                                    i9</span> <br>
+                                <span class="text-opacity-25 text-black-50 text-capitalize small">low budget hight
+                                    pefomerce</span> <br>
+
+                                <span>$1499</span>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row ">
+                                            <button class="col-5 btn btn-outline-dark me-1 fw-bold">Add cart</button>
+                                            <button class="col-6 btn btn-dark fw-bold">Buy Now</button>
+                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold"
+                                                onclick="viewProduct('PID_2211')">View Product</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- View  Product description -->
+                            <div class="col-12 col-lg-4 d-none " id="product_longDescription_PID_2211">
+                                <span class="fw-bolder fs-4 text-capitalize">Refurbished 27-inch iMac</span>
+                                <p class="mt-5 fw-bold text-black-50 ">
+                                    – 3.6GHz 8-core Intel Core i9 <br>
+                                    – 8GB RAM <br>
+                                    – 256GB SSD <br>
+                                    – WebCam/Bluetooth, Touch ID <br>
+                                    – 13.3″ Retine LED Blacklit Display <br>
+                                    – True Tone Technology <br>
+                                    – Space Gray Color <br>
+                                    – Mac OS <br>
+                                </p>
+                                <div class="row">
+                                    <div class="col-12 fw-bold">-Rose Gold</div>
+                                    <div class=" col-1 rounded-5 p-3 border border-dark m-1 "
+                                        style="background-color: #a7adba;"></div>
+                                    <div class=" col-1 rounded-5 p-3 border border-secondary m-1"
+                                        style="background-color: #FDDCD7;"></div>
+                                    <div class=" col-1 rounded-5 p-3 border border-secondary m-1"
+                                        style="background-color:  #aaa9ad;"></div>
+                                </div>
+                            </div>
+
+                            <!--View product purchus details -->
+                            <div class=" col-12 col-lg-3 border border-1 rounded-1 d-none "
+                                id="product_purchasDetails_PID_2211">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <div class="btn-close" onclick="closeProduct('PID_2211')"></div>
+                                    </div>
+                                </div>
+
+                                <div class="fw-bold fs-3 mt-1 ms-3">$699.00</div>
+                                <div class="text-black-50 mt-0 ms-4"><del>$799.00</del></div>
+                                <div class="mt-3">
+                                    <div class="fw-bold">Quantity</div>
+                                    <input class="ms-5" type="number" value="1">
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-1 ">
+                                        <i class="bi bi-truck fs-3 fw-bold  "></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <div class="row ms-2">
+                                            <div class="col-12 fw-bold text-success">inStock</div>
+                                            <div class="col-12 text-black-50">Delevery Free in colombo</div>
+                                            <div class="col-12 text-black-50">$1 Delevery out of colombo</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5">
+                                    <div class="col-12">
+                                        <div class="row ">
+                                            <button class="col-5 btn btn-outline-dark me-1 fw-bold">Add cart</button>
+                                            <button class="col-6 btn btn-dark fw-bold">Buy Now</button>
+                                            <button class="col-11 btn btn-outline-secondary mt-1 fw-bold">Add to whish
+                                                List</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <button class="btn btn-light mt-2 fw-bold"> See More </button>
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <!-- Footer -->
+        <div class="row">
             <div class="col-12">
                 <footer class="bg-dark text-white pb-5 pt-4">
 
                     <div class="col-12 text-md-start">
                         <div class="row text-sm-center text-md-start">
-            
+
                             <div class="col-12 col-md-3 col-lg-3 mx-auto mt-3">
                                 <h5 class="text-uppercase mt-4 text-warning">eShop</h5>
-                                <p>Here we are the newtech.lk&trade; to support you for accomplish your desire by selling high
+                                <p>Here we are the newtech.lk&trade; to support you for accomplish your desire by
+                                    selling high
                                     quality products.</p>
                             </div>
-            
+
                             <div class="col-12 col-md-3 col-lg-3 mx-auto mt-3">
                                 <p>Copyright &copy; 2022 newtech All Rights Reserved</p>
                             </div>
-            
+
                             <div class="col-12 col-md-3 col-lg-3 mx-auto mt-3">
                                 <div class="text-center text-md-start">
-            
+
                                     <ul class="list-unstyled list-inline">
-            
+
                                         <li class="list-inline-item">
                                             <a href="#" class="form-floating text-white">
                                                 <i class="bi bi-facebook" style="font-size: 22px;"></i>
                                             </a>
                                         </li>
-            
+
                                         <li class="list-inline-item">
                                             <a href="#" class="form-floating text-white">
                                                 <i class="bi bi-twitter" style="font-size: 22px;"></i>
                                             </a>
                                         </li>
-            
+
                                         <li class="list-inline-item">
                                             <a href="#" class="form-floating text-white">
                                                 <i class="bi bi-whatsapp" style="font-size: 22px;"></i>
                                             </a>
                                         </li>
-            
+
                                         <li class="list-inline-item">
                                             <a href="#" class="form-floating text-white">
                                                 <i class="bi bi-linkedin" style="font-size: 22px;"></i>
                                             </a>
                                         </li>
-            
+
                                         <li class="list-inline-item">
                                             <a href="#" class="form-floating text-white">
                                                 <i class="bi bi-youtube" style="font-size: 22px;"></i>
                                             </a>
                                         </li>
-            
+
                                     </ul>
-            
+
                                 </div>
                             </div>
-            
+
                             <div class="col-12 col-md-3 col-lg-3 mx-auto mt-3">
-            
-                            <h5 class="text-uppercase text-warning mb-4">Contact Us</h5>
-            
-                            <p><i class="bi bi-house-fill"></i> Maradana, Colombo 10, Sri Lanka</p>
-                            <p><i class="bi bi-at"></i> newtech@gmail.com</p>
-                            <p><i class="bi bi-telephone-fill"></i> +94112 4445558</p>
-                            <p><i class="bi bi-printer-fill"></i> +94112 4445558</p>
-            
+
+                                <h5 class="text-uppercase text-warning mb-4">Contact Us</h5>
+
+                                <p><i class="bi bi-house-fill"></i> Maradana, Colombo 10, Sri Lanka</p>
+                                <p><i class="bi bi-at"></i> newtech@gmail.com</p>
+                                <p><i class="bi bi-telephone-fill"></i> +94112 4445558</p>
+                                <p><i class="bi bi-printer-fill"></i> +94112 4445558</p>
+
                             </div>
-            
-                            <hr class="mb-4"/>
-            
+
+                            <hr class="mb-4" />
+
                         </div>
                     </div>
-            
+
                 </footer>
             </div>
-         </div>
+        </div>
 
 
-     
+
 
 
 
