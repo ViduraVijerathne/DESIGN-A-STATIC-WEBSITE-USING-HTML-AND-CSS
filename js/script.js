@@ -79,3 +79,52 @@ function toggleCart(){
     
   }
 
+var selectedChangeUserPanelTab ='dashbord';
+function changeUserPanelTab(id){
+    const selectedTab = document.getElementById(selectedChangeUserPanelTab);
+    selectedTab.classList.remove('bg-black')
+    selectedTab.classList.remove('text-white')
+    selectedTab.classList.add('border')
+    selectedTab.classList.add('border-opacity-10')
+    selectedTab.classList.add('border-dark')
+
+    if (id == "MyAccount"){
+        document.getElementById('Aside_profile_View').classList.add('d-none')
+    }
+    if (selectedChangeUserPanelTab == "MyAccount"){
+        document.getElementById('Aside_profile_View').classList.remove('d-none')
+    }
+    const nedTab = document.getElementById(id);
+    nedTab.classList.add('bg-black')
+    nedTab.classList.add('text-white')
+    nedTab.classList.remove('border')
+    nedTab.classList.remove('border-opacity-10')
+    nedTab.classList.remove('border-dark')
+    
+    
+
+    
+
+    const selectedWindow = document.getElementById(selectedChangeUserPanelTab+"_Comporent");
+    selectedWindow.classList.add('d-none')
+
+    const newWindow = document.getElementById(id+"_Comporent");
+    newWindow.classList.remove('d-none')
+
+    selectedChangeUserPanelTab = id
+
+    
+
+
+}
+
+function updateProfileIMG(){
+    var viwe = document.getElementById("profile_img");
+    const file = document.getElementById('profileImg_upload')
+
+    file.onchange = function(){
+        var file1 = this.files[0];
+        var url = window.URL.createObjectURL(file1);
+        viwe.src = url;
+    }
+}

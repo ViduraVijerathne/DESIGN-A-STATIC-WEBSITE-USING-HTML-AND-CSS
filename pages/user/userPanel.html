@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boostrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- linking Boostrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- My css -->
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <title>New Tech | User Panel</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <!-- header -->
+        <div class="row">
+
+            <div class="col-12 bg-light">
+                <!-- User name and language , curruncy mode  showing header -->
+                <div class="row">
+                    <!-- user name -->
+                    <div class="col-6 d-flex align-items-center ">
+                        <span class="fw-bolder text-center "> Hello JOEN ! </span>
+                    </div>
+
+                    <!-- language and currency -->
+                    <div class="col-6 d-flex justify-content-end " style="z-index: 10000;">
+                        <div class="row">
+
+                            <!-- currency drop down -->
+                            <div class="col-6">
+                                <div class="dropdown">
+                                    <button class="btn btn-light dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        USD - $
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><button class="dropdown-item" type="button">LKR - Rs</button></li>
+                                        <li><button class="dropdown-item" type="button">INR - Rs</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- language drop down -->
+                            <div class="col-6">
+                                <div class="dropdown">
+                                    <button class="btn btn-light dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        English
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><button class="dropdown-item" type="button">Sinhala</button></li>
+                                        <li><button class="dropdown-item" type="button">Russhian</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <hr>
+            </div>
+
+
+        </div>
+
+        <!-- Nav bar -->
+        <div class="row sticky-top">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><img src="/src/logo.png" alt="logo"
+                                class="rounded mx-2 me-1 img-thumbnail bg-light border-0 d-none d-lg-block"
+                                style="height: 50px;"></a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+
+                        <div class="collapse navbar-collapse" id="navbarScroll">
+
+                            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                                style="--bs-scroll-height: 100px;">
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">My Orders</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        catergories
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#computer">Computers</a></li>
+                                        <li><a class="dropdown-item" href="#laptop">Laptops</a></li>
+                                        <li><a class="dropdown-item" href="#">Audio device</a></li>
+                                        <li><a class="dropdown-item" href="#">computer accessories</a></li>
+
+                                    </ul>
+                                </li>
+
+                            </ul>
+
+                            <form class="d-flex col-lg-6  col-12" role="search">
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">All cattogories</button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
+                                        <li><a class="dropdown-item" href="#">Laptops</a></li>
+                                        <li><a class="dropdown-item" href="#">Computers</a></li>
+                                        <li><a class="dropdown-item" href="#">computer accessories</a></li>
+                                    </ul>
+                                    <input type="text" class="form-control"
+                                        aria-label="Text input with dropdown button">
+                                    <button class="btn btn-primary">Search</button>
+                                </div>
+                            </form>
+
+                            <div class="col-3 d-none d-lg-flex justify-content-end ">
+
+                                <button class="btn btn-light">
+                                    <a href="./pages/user/login.html" class="text-dark">
+                                        <h3 class=" bi bi-person fw-bold  "></h3>
+                                    </a>
+
+                                </button>
+                                <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#WatchedList">
+                                    <h3 class=" bi bi-heart text-danger fw-bold  "></h3>
+                                </button>
+                                <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <h3 class=" bi bi-bag  fw-bold"></h3>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Cart -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-3" id="exampleModalLabel">Cart <i class="bi bi-cart-check-fill"></i>
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid overflow-scroll" style="height: 500px;">
+                            <!-- One Item -->
+                            <div class="row ">
+                                <div class="col-6">
+                                    <img src="/src/PID_6699.png " class="img-fluid  bg-light border-0" alt="" srcset="">
+                                </div>
+                                <div class="col-6">
+                                    <span class="fw-bolder text-capitalize">Refurbished 27-inch iMac</span> <br>
+                                    <span class="text-opacity-25 text-black-50 text-capitalize ">3.6GHz 8-core Intel
+                                        Core i9</span>
+                                    <hr>
+                                    <div class="row mt-2">
+                                        <div class="col-6">
+                                            <div class="col-12 fw-bold">-Silver</div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class=" col-1 rounded-5 p-3 border border-dark m-1 "
+                                                style="background-color: #a7adba;"></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-2">
+                                        <div class="col-6">
+                                            <div class="col-12 fw-bold">-Quentity</div>
+                                        </div>
+
+                                        <input type="number" class="border-dark col-3" value="1">
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+                                <div class="col-12 mt-3">
+                                    <div class="row d-flex justify-content-between me-2">
+                                        <button class="btn btn-outline-dark col-6">View Product</button>
+
+
+                                        <button class="btn btn-danger col-3">
+                                            <i class="bi bi-trash fw-bold"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-3">
+
+
+
+                            </div>
+
+                            <!-- One Item -->
+                            <div class="row ">
+                                <div class="col-6">
+                                    <img src="/src/PID_6699.png " class="img-fluid  bg-light border-0" alt="" srcset="">
+                                </div>
+                                <div class="col-6">
+                                    <span class="fw-bolder text-capitalize">Refurbished 27-inch iMac</span> <br>
+                                    <span class="text-opacity-25 text-black-50 text-capitalize ">3.6GHz 8-core Intel
+                                        Core i9</span>
+                                    <hr>
+                                    <div class="row mt-2">
+                                        <div class="col-6">
+                                            <div class="col-12 fw-bold">-Silver</div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class=" col-1 rounded-5 p-3 border border-dark m-1 "
+                                                style="background-color: #a7adba;"></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-2">
+                                        <div class="col-6">
+                                            <div class="col-12 fw-bold">-Quentity</div>
+                                        </div>
+
+                                        <input type="number" class="border-dark col-3" value="1">
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+                                <div class="col-12 mt-3">
+                                    <div class="row d-flex justify-content-between me-2">
+                                        <button class="btn btn-outline-dark col-6">View Product</button>
+
+
+                                        <button class="btn btn-danger col-3">
+                                            <i class="bi bi-trash fw-bold"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-3">
+
+
+
+                            </div>
+
+                            <!-- One Item -->
+                            <div class="row ">
+                                <div class="col-6">
+                                    <img src="/src/PID_6699.png " class="img-fluid  bg-light border-0" alt="" srcset="">
+                                </div>
+                                <div class="col-6">
+                                    <span class="fw-bolder text-capitalize">Refurbished 27-inch iMac</span> <br>
+                                    <span class="text-opacity-25 text-black-50 text-capitalize ">3.6GHz 8-core Intel
+                                        Core i9</span>
+                                    <hr>
+                                    <div class="row mt-2">
+                                        <div class="col-6">
+                                            <div class="col-12 fw-bold">-Silver</div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class=" col-1 rounded-5 p-3 border border-dark m-1 "
+                                                style="background-color: #a7adba;"></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-2">
+                                        <div class="col-6">
+                                            <div class="col-12 fw-bold">-Quentity</div>
+                                        </div>
+
+                                        <input type="number" class="border-dark col-3" value="1">
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+                                <div class="col-12 mt-3">
+                                    <div class="row d-flex justify-content-between me-2">
+                                        <button class="btn btn-outline-dark col-6">View Product</button>
+
+
+                                        <button class="btn btn-danger col-3">
+                                            <i class="bi bi-trash fw-bold"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-3">
+
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="sticky-bottom">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-6 ">
+
+
+
+                                    </div>
+
+                                    <div class="col-6 text-capitalize  fw-bold ">
+                                        <div class="row mb-2">
+                                            <div class="col-6">
+                                                <span>Total : $5999</span>
+                                                <br>
+                                                <span>Descount : -10%</span><br>
+
+
+                                            </div>
+                                            <div class="col-6">
+                                                <span>Sub Total: $4000</span> <br>
+                                                <button class="btn btn-dark fw-bold">Check Out</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Watched List -->
+        <div class="modal fade" id="WatchedList" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-3" id="exampleModalLabel">WatchedList <i class="bi bi-heart-fill"></i>
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid overflow-scroll" style="height: 500px;">
+                            <!-- One Item -->
+                            <div class="row ">
+                                <div class="col-6">
+                                    <img src="/src/PID_6699.png " class="img-fluid  bg-light border-0" alt="" srcset="">
+                                </div>
+                                <div class="col-6">
+                                    <span class="fw-bolder text-capitalize">Refurbished 27-inch iMac</span> <br>
+                                    <span class="text-opacity-25 text-black-50 text-capitalize ">3.6GHz 8-core Intel
+                                        Core i9</span>
+                                    <hr>
+                                    <div class="row mt-2">
+                                        <div class="col-6">
+                                            <div class="col-12 fw-bold">-Silver</div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class=" col-1 rounded-5 p-3 border border-dark m-1 "
+                                                style="background-color: #a7adba;"></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-2">
+                                        <div class="col-6">
+                                            <div class="col-12 fw-bold">-Quentity</div>
+                                        </div>
+
+                                        <input type="number" class="border-dark col-3" value="1">
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+                                <div class="col-12 mt-3">
+                                    <div class="row d-flex justify-content-between me-2">
+                                        <button class="btn btn-outline-dark col-6">View Product</button>
+
+
+                                        <button class="btn btn-danger col-3">
+                                            <i class="bi bi-trash fw-bold"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-3">
+
+
+
+                            </div>
+
+                            <!-- One Item -->
+                            <div class="row ">
+                                <div class="col-6">
+                                    <img src="/src/PID_6699.png " class="img-fluid  bg-light border-0" alt="" srcset="">
+                                </div>
+                                <div class="col-6">
+                                    <span class="fw-bolder text-capitalize">Refurbished 27-inch iMac</span> <br>
+                                    <span class="text-opacity-25 text-black-50 text-capitalize ">3.6GHz 8-core Intel
+                                        Core i9</span>
+                                    <hr>
+                                    <div class="row mt-2">
+                                        <div class="col-6">
+                                            <div class="col-12 fw-bold">-Silver</div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class=" col-1 rounded-5 p-3 border border-dark m-1 "
+                                                style="background-color: #a7adba;"></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-2">
+                                        <div class="col-6">
+                                            <div class="col-12 fw-bold">-Quentity</div>
+                                        </div>
+
+                                        <input type="number" class="border-dark col-3" value="1">
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+                                <div class="col-12 mt-3">
+                                    <div class="row d-flex justify-content-between me-2">
+                                        <button class="btn btn-outline-dark col-6">View Product</button>
+
+
+                                        <button class="btn btn-danger col-3">
+                                            <i class="bi bi-trash fw-bold"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-3">
+
+
+
+                            </div>
+
+                            <!-- One Item -->
+                            <div class="row ">
+                                <div class="col-6">
+                                    <img src="/src/PID_6699.png " class="img-fluid  bg-light border-0" alt="" srcset="">
+                                </div>
+                                <div class="col-6">
+                                    <span class="fw-bolder text-capitalize">Refurbished 27-inch iMac</span> <br>
+                                    <span class="text-opacity-25 text-black-50 text-capitalize ">3.6GHz 8-core Intel
+                                        Core i9</span>
+                                    <hr>
+                                    <div class="row mt-2">
+                                        <div class="col-6">
+                                            <div class="col-12 fw-bold">-Silver</div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class=" col-1 rounded-5 p-3 border border-dark m-1 "
+                                                style="background-color: #a7adba;"></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-2">
+                                        <div class="col-6">
+                                            <div class="col-12 fw-bold">-Quentity</div>
+                                        </div>
+
+                                        <input type="number" class="border-dark col-3" value="1">
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+                                <div class="col-12 mt-3">
+                                    <div class="row d-flex justify-content-between me-2">
+                                        <button class="btn btn-outline-dark col-6">View Product</button>
+
+
+                                        <button class="btn btn-danger col-3">
+                                            <i class="bi bi-trash fw-bold"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <hr class="mt-3">
+
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="sticky-bottom">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-6 ">
+
+
+
+                                    </div>
+
+                                    <div class="col-6 text-capitalize  fw-bold ">
+                                        <div class="row mb-2">
+                                            <div class="col-6">
+                                                <span>Total : $5999</span>
+                                                <br>
+                                                <span>Descount : -10%</span><br>
+
+
+                                            </div>
+                                            <div class="col-6">
+                                                <span>Sub Total: $4000</span> <br>
+                                                <button class="btn btn-dark fw-bold">Check Out</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            <div class="col-12 bg-light text-center fw-bold">
+                <h2>My Profile</h2>
+            </div>
+
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-lg-2 col-12 bg-light " >
+                        <div class="row">
+
+                            <div class="col-12 text-center">
+
+                                <div class="row" id="Aside_profile_View">
+                                    <div class="col-12">
+                                        <i class="bi bi-person-circle fs-1 "></i>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="fw-bold fs-5 text-capitalize">Joen krishman</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="text-black-50"> Joen@gmail.com</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class=" mt-5 cuser-pointer ">
+                                <div class="row">
+
+                                    <div id="dashbord" class="col-11 ms-2 m-1 p-2  bg-black text-white"
+                                        onclick="changeUserPanelTab('dashbord')">
+                                        <i class="bi bi-grid-fill"></i>
+                                        <span class="fw-bold">Dashbord</span>
+                                    </div>
+
+                                    <div id="Orders" class="col-11 ms-2 m-1 p-2 border border-opacity-10 border-dark"
+                                        onclick="changeUserPanelTab('Orders')">
+                                        <i class="bi bi-bag-check"></i>
+                                        <span class="fw-bold">Orders</span>
+                                    </div>
+
+                                    <div id="Address" class="col-11 ms-2 m-1 p-2 border border-opacity-10 border-dark"
+                                        onclick="changeUserPanelTab('Address')">
+                                        <i class="bi bi-globe"></i>
+                                        <span class="fw-bold">Address</span>
+                                    </div>
+
+                                    <div id="MyAccount" class="col-11 ms-2 m-1 p-2 border border-opacity-10 border-dark"
+                                        onclick="changeUserPanelTab('MyAccount')">
+                                        <i class="bi bi-person-circle"></i>
+                                        <span class="fw-bold">My Account</span>
+                                    </div>
+
+                                    <div id="LogOut" class="col-11 ms-2 m-1 p-2 border border-opacity-10 border-dark"
+                                        onclick="changeUserPanelTab('LogOut')">
+                                        <i class="bi bi-box-arrow-in-right"></i>
+                                        <span class="fw-bold">Log Out</span>
+                                    </div>
+
+                                    <div class="col-12 p-5">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-10 col-12" id="dashbord_Comporent">
+                        <div class="row ">
+                            <div class="col-12 mt-5 ms-5">
+                                <span class="text-capitalize fw-bold fs-4">wellcome to your account page</span>
+                            </div>
+                            <div class="col-12">
+                                <span class="text-capitalize text-black-50 ">Hi <span class="fw-bold">Joen
+                                        krishman</span> ! today is a great day to ckeck your account page. you can check
+                                    also: </span>
+                            </div>
+
+                            <div class="col-12 mt-5">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="row">
+                                            <button class="col-11 fw-bold btn btn-outline-dark"> Orders</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <div class="row">
+                                            <button class="col-11 fw-bold btn btn-dark"> Address</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <div class="row">
+                                            <button class="col-11 fw-bold btn btn-dark"> Account</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Order Comporent -->
+                    <div class="col-lg-10 col-12 d-none " id="Orders_Comporent">
+                        <div class="row mt-5 fw-bold text-capitalize fs-5">
+                            <div class="col-2">
+                                order ID
+                            </div>
+                            <div class="col-2">
+                                date
+                            </div>
+                            <div class="col-2">
+                                status
+                            </div>
+
+                            <div class="col-2">
+                                Total
+                            </div>
+
+                            <div class="col-2">
+                                item
+                            </div>
+
+                            <div class="col-2">
+                                action
+                            </div>
+
+                            <div class="col-12">
+                                <hr>
+                            </div>
+
+                        </div>
+
+                        <!-- Order Items -->
+                        <div class="row mt-4">
+
+                            <!-- order one item -->
+                            <div class="col-12 mt-3">
+                                <div class="row fw-bold text-black-50 text-uppercase ">
+                                    <div class="col-2">
+                                        #1253
+                                    </div>
+
+                                    <div class="col-2">
+                                        octomber 23 , 2022
+                                    </div>
+
+                                    <div class="col-2">
+                                        <span class="text-primary">processing</span>
+                                    </div>
+
+                                    <div class="col-2">
+                                        $550 For 1 item
+                                    </div>
+
+                                    <div class="col-2">
+                                        Apple i pad pro
+                                    </div>
+
+                                    <div class="col-2">
+                                        <div class="row">
+                                            <div class="col-6 ">
+                                                <div class="row">
+                                                    <button class="btn btn-outline-dark col-11 fw-bold">View</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row">
+                                                    <button class="btn btn-dark fw-bold">invoice</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- order one item -->
+                            <div class="col-12 mt-3">
+                                <div class="row fw-bold text-black-50 text-uppercase ">
+                                    <div class="col-2">
+                                        #1253
+                                    </div>
+
+                                    <div class="col-2">
+                                        octomber 23 , 2022
+                                    </div>
+
+                                    <div class="col-2">
+                                        <span class="text-danger">canseled by user</span>
+                                    </div>
+
+                                    <div class="col-2">
+                                        $550 For 1 item
+                                    </div>
+
+                                    <div class="col-2">
+                                        Apple i pad pro
+                                    </div>
+
+                                    <div class="col-2">
+                                        <div class="row">
+                                            <div class="col-6 ">
+                                                <div class="row">
+                                                    <button class="btn btn-outline-dark col-11 fw-bold">View</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row">
+                                                    <button class="btn btn-dark fw-bold">invoice</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- order one item -->
+                            <div class="col-12 mt-3">
+                                <div class="row fw-bold text-black-50 text-uppercase ">
+                                    <div class="col-2">
+                                        #1253
+                                    </div>
+
+                                    <div class="col-2">
+                                        octomber 23 , 2022
+                                    </div>
+
+                                    <div class="col-2">
+                                        <span class="text-success">delevered</span>
+                                    </div>
+
+                                    <div class="col-2">
+                                        $550 For 1 item
+                                    </div>
+
+                                    <div class="col-2">
+                                        Apple i pad pro
+                                    </div>
+
+                                    <div class="col-2">
+                                        <div class="row">
+                                            <div class="col-6 ">
+                                                <div class="row">
+                                                    <button class="btn btn-outline-dark col-11 fw-bold">View</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row">
+                                                    <button class="btn btn-dark fw-bold">invoice</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- order one item -->
+                            <div class="col-12 mt-3">
+                                <div class="row fw-bold text-black-50 text-uppercase ">
+                                    <div class="col-2">
+                                        #1253
+                                    </div>
+
+                                    <div class="col-2">
+                                        octomber 23 , 2022
+                                    </div>
+
+                                    <div class="col-2">
+                                        <span class="text-primary">processing</span>
+                                    </div>
+
+                                    <div class="col-2">
+                                        $550 For 1 item
+                                    </div>
+
+                                    <div class="col-2">
+                                        Apple i pad pro
+                                    </div>
+
+                                    <div class="col-2">
+                                        <div class="row">
+                                            <div class="col-6 ">
+                                                <div class="row">
+                                                    <button class="btn btn-outline-dark col-11 fw-bold">View</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row">
+                                                    <button class="btn btn-dark fw-bold">invoice</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- order one item -->
+                            <div class="col-12 mt-3">
+                                <div class="row fw-bold text-black-50 text-uppercase ">
+                                    <div class="col-2">
+                                        #1253
+                                    </div>
+
+                                    <div class="col-2">
+                                        octomber 23 , 2022
+                                    </div>
+
+                                    <div class="col-2">
+                                        <span class="text-danger">canseled by user</span>
+                                    </div>
+
+                                    <div class="col-2">
+                                        $550 For 1 item
+                                    </div>
+
+                                    <div class="col-2">
+                                        Apple i pad pro
+                                    </div>
+
+                                    <div class="col-2">
+                                        <div class="row">
+                                            <div class="col-6 ">
+                                                <div class="row">
+                                                    <button class="btn btn-outline-dark col-11 fw-bold">View</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row">
+                                                    <button class="btn btn-dark fw-bold">invoice</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- order one item -->
+                            <div class="col-12 mt-3">
+                                <div class="row fw-bold text-black-50 text-uppercase ">
+                                    <div class="col-2">
+                                        #1253
+                                    </div>
+
+                                    <div class="col-2">
+                                        octomber 23 , 2022
+                                    </div>
+
+                                    <div class="col-2">
+                                        <span class="text-success">delevered</span>
+                                    </div>
+
+                                    <div class="col-2">
+                                        $550 For 1 item
+                                    </div>
+
+                                    <div class="col-2">
+                                        Apple i pad pro
+                                    </div>
+
+                                    <div class="col-2">
+                                        <div class="row">
+                                            <div class="col-6 ">
+                                                <div class="row">
+                                                    <button class="btn btn-outline-dark col-11 fw-bold">View</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row">
+                                                    <button class="btn btn-dark fw-bold">invoice</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- order one item -->
+                            <div class="col-12 mt-3">
+                                <div class="row fw-bold text-black-50 text-uppercase ">
+                                    <div class="col-2">
+                                        #1253
+                                    </div>
+
+                                    <div class="col-2">
+                                        octomber 23 , 2022
+                                    </div>
+
+                                    <div class="col-2">
+                                        <span class="text-primary">processing</span>
+                                    </div>
+
+                                    <div class="col-2">
+                                        $550 For 1 item
+                                    </div>
+
+                                    <div class="col-2">
+                                        Apple i pad pro
+                                    </div>
+
+                                    <div class="col-2">
+                                        <div class="row">
+                                            <div class="col-6 ">
+                                                <div class="row">
+                                                    <button class="btn btn-outline-dark col-11 fw-bold">View</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row">
+                                                    <button class="btn btn-dark fw-bold">invoice</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- order one item -->
+                            <div class="col-12 mt-3">
+                                <div class="row fw-bold text-black-50 text-uppercase ">
+                                    <div class="col-2">
+                                        #1253
+                                    </div>
+
+                                    <div class="col-2">
+                                        octomber 23 , 2022
+                                    </div>
+
+                                    <div class="col-2">
+                                        <span class="text-danger">canseled by user</span>
+                                    </div>
+
+                                    <div class="col-2">
+                                        $550 For 1 item
+                                    </div>
+
+                                    <div class="col-2">
+                                        Apple i pad pro
+                                    </div>
+
+                                    <div class="col-2">
+                                        <div class="row">
+                                            <div class="col-6 ">
+                                                <div class="row">
+                                                    <button class="btn btn-outline-dark col-11 fw-bold">View</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row">
+                                                    <button class="btn btn-dark fw-bold">invoice</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- order one item -->
+                            <div class="col-12 mt-3">
+                                <div class="row fw-bold text-black-50 text-uppercase ">
+                                    <div class="col-2">
+                                        #1253
+                                    </div>
+
+                                    <div class="col-2">
+                                        octomber 23 , 2022
+                                    </div>
+
+                                    <div class="col-2">
+                                        <span class="text-success">delevered</span>
+                                    </div>
+
+                                    <div class="col-2">
+                                        $550 For 1 item
+                                    </div>
+
+                                    <div class="col-2">
+                                        Apple i pad pro
+                                    </div>
+
+                                    <div class="col-2">
+                                        <div class="row">
+                                            <div class="col-6 ">
+                                                <div class="row">
+                                                    <button class="btn btn-outline-dark col-11 fw-bold">View</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row">
+                                                    <button class="btn btn-dark fw-bold">invoice</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- order one item -->
+                            <div class="col-12 mt-3">
+                                <div class="row fw-bold text-black-50 text-uppercase ">
+                                    <div class="col-2">
+                                        #1253
+                                    </div>
+
+                                    <div class="col-2">
+                                        octomber 23 , 2022
+                                    </div>
+
+                                    <div class="col-2">
+                                        <span class="text-primary">processing</span>
+                                    </div>
+
+                                    <div class="col-2">
+                                        $550 For 1 item
+                                    </div>
+
+                                    <div class="col-2">
+                                        Apple i pad pro
+                                    </div>
+
+                                    <div class="col-2">
+                                        <div class="row">
+                                            <div class="col-6 ">
+                                                <div class="row">
+                                                    <button class="btn btn-outline-dark col-11 fw-bold">View</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row">
+                                                    <button class="btn btn-dark fw-bold">invoice</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- order one item -->
+                            <div class="col-12 mt-3">
+                                <div class="row fw-bold text-black-50 text-uppercase ">
+                                    <div class="col-2">
+                                        #1253
+                                    </div>
+
+                                    <div class="col-2">
+                                        octomber 23 , 2022
+                                    </div>
+
+                                    <div class="col-2">
+                                        <span class="text-danger">canseled by user</span>
+                                    </div>
+
+                                    <div class="col-2">
+                                        $550 For 1 item
+                                    </div>
+
+                                    <div class="col-2">
+                                        Apple i pad pro
+                                    </div>
+
+                                    <div class="col-2">
+                                        <div class="row">
+                                            <div class="col-6 ">
+                                                <div class="row">
+                                                    <button class="btn btn-outline-dark col-11 fw-bold">View</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row">
+                                                    <button class="btn btn-dark fw-bold">invoice</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- order one item -->
+                            <div class="col-12 mt-3">
+                                <div class="row fw-bold text-black-50 text-uppercase ">
+                                    <div class="col-2">
+                                        #1253
+                                    </div>
+
+                                    <div class="col-2">
+                                        octomber 23 , 2022
+                                    </div>
+
+                                    <div class="col-2">
+                                        <span class="text-success">delevered</span>
+                                    </div>
+
+                                    <div class="col-2">
+                                        $550 For 1 item
+                                    </div>
+
+                                    <div class="col-2">
+                                        Apple i pad pro
+                                    </div>
+
+                                    <div class="col-2">
+                                        <div class="row">
+                                            <div class="col-6 ">
+                                                <div class="row">
+                                                    <button class="btn btn-outline-dark col-11 fw-bold">View</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row">
+                                                    <button class="btn btn-dark fw-bold">invoice</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <!-- Address Comporent -->
+                    <div class="col-lg-10 col-12 d-none" id="Address_Comporent">
+                        <div class="row mt-5">
+                            <div class="col-10 fw-bold text-black-50 text-capitalize">
+                                The following addresses will be used on page by default
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-dark"> Add Address</button>
+                            </div>
+                            <hr class="mt-2">
+                        </div>
+
+                        <!-- one address -->
+                        <div class="row mt-3">
+
+                            <div class="col-1">
+                                <input type="radio" name="address" id="address_1">
+                            </div>
+                            <div class="col-11">
+                                <label for="address_1" class="row">
+                                    <!-- billing address -->
+                                    <div class="col-5">
+                                        <div class="row">
+                                            <div class="col-12 text-capitalize fw-bold fs-5">
+                                                billing address
+                                            </div>
+                                            <hr>
+                                            <div class="col-12 fw-bold text-black-50">
+                                                Joen krishman, <br>
+                                                Moroththa,Madahapola. <br>
+                                                Melsiripura <br>
+                                                60552
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- shipping address -->
+                                    <div class="col-5">
+                                        <div class="row">
+                                            <div class="col-12 text-capitalize fw-bold fs-5">
+                                                shipping address
+                                            </div>
+                                            <hr>
+                                            <div class="col-12 fw-bold text-black-50">
+                                                Joen krishman, <br>
+                                                Moroththa,Madahapola. <br>
+                                                Melsiripura <br>
+                                                60552
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2">
+                                        <button class="btn btn-outline-dark ms-5">Update</button>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- one address -->
+                        <div class="row mt-3">
+
+                            <div class="col-1">
+                                <input type="radio" name="address" id="address_2">
+                            </div>
+                            <div class="col-11">
+                                <label for="address_2" class="row">
+                                    <!-- billing address -->
+                                    <div class="col-5">
+                                        <div class="row">
+                                            <div class="col-12 text-capitalize fw-bold fs-5">
+                                                billing address
+                                            </div>
+                                            <hr>
+                                            <div class="col-12 fw-bold text-black-50">
+                                                Joen krishman, <br>
+                                                Moroththa,Madahapola. <br>
+                                                Melsiripura <br>
+                                                60552
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- shipping address -->
+                                    <div class="col-5">
+                                        <div class="row">
+                                            <div class="col-12 text-capitalize fw-bold fs-5">
+                                                shipping address
+                                            </div>
+                                            <hr>
+                                            <div class="col-12 fw-bold text-black-50">
+                                                Joen krishman, <br>
+                                                Moroththa,Madahapola. <br>
+                                                Melsiripura <br>
+                                                60552
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2">
+                                        <button class="btn btn-outline-dark ms-5">Update</button>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- My Account -->
+                    <div class="col-lg-10 col-12 d-none" id="MyAccount_Comporent">
+                        <div class="row">
+                            <div class="col-4  text-center  border-end">
+
+                                <div class="row ">
+                                    <img src="/src/profileImg/sample-profile-pic.png" alt="" srcset=""
+                                        class="img-fluid border rounded-circle" id="profile_img">
+                                    <input type="file" name="profileImg_upload" id="profileImg_upload" class="d-none" >
+                                    <label for="profileImg_upload" class="btn btn-dark fw-bold" onclick="updateProfileIMG()">Update Profle Image</label>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <div class="col-12">
+                                        <span class="fw-bold fs-5 text-capitalize">Joen krishman</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <span class="text-black-50"> Joen@gmail.com</span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-8">
+                                <fieldset class="row mt-5 border m-2">
+                                    <legend class="fw-bold text-black-50 text-capitalize fs-5">Personal Details</legend>
+                                    <div class="col-6">
+                                        <input type="text" placeholder="First Name" class="form-control border-dark">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <input type="text" placeholder="Last Name" class="form-control border-dark">
+                                    </div>
+
+                                    <div class="col-12 mt-2">
+                                        <input type="text" placeholder="Email" class="form-control border-dark">
+                                    </div>
+                                    
+                                </fieldset>
+
+                                <div class="row">
+                                    <fieldset class="col-12 mt-5 border m-2">
+                                        <legend class="fw-bold text-black-50 text-capitalize fs-5">Password Change</legend>
+
+                                       <div class="row">
+                                        <div class="col-12 mt-2">
+                                            <input type="Password" placeholder="Current Password" class="form-control border-dark">
+                                        </div>
+                                        <div class="col-6 mt-2">
+                                            <input type="Password" placeholder="New  Password" class="form-control border-dark">
+                                        </div>
+    
+                                        <div class="col-6 mt-2">
+                                            <input type="Password" placeholder="confirm New Password" class="form-control border-dark">
+                                        </div>
+                                       </div>
+                                    </fieldset>
+                                    
+                                </div>
+
+                                <div class="row mt-2">
+                                    <button class="btn btn-danger fw-bold ">Update Profile</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-10 col-12 d-none" id="LogOut_Comporent">LogOut</div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- Boostrap Java Script -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+
+        <!-- My Java Script -->
+        <script src="../../js/script.js"></script>
+
+</body>
+
+</html>
