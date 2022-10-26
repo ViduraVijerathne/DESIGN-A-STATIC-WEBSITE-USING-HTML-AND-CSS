@@ -81,6 +81,8 @@ function toggleCart(){
 
 var selectedChangeUserPanelTab ='dashbord';
 function changeUserPanelTab(id){
+
+   
     const selectedTab = document.getElementById(selectedChangeUserPanelTab);
     selectedTab.classList.remove('bg-black')
     selectedTab.classList.remove('text-white')
@@ -117,6 +119,49 @@ function changeUserPanelTab(id){
 
 
 }
+
+
+var selectedChangeUserPanelTab_sm ='dashbord';
+function changeUserPanelTab_sm(id){
+    
+   
+    const selectedTab = document.getElementById(selectedChangeUserPanelTab_sm+"_sm");
+    selectedTab.classList.remove('bg-black')
+    selectedTab.classList.remove('text-white')
+    selectedTab.classList.add('border')
+    selectedTab.classList.add('border-opacity-10')
+    selectedTab.classList.add('border-dark')
+
+    if (id == "MyAccount"){
+        document.getElementById('Aside_profile_View').classList.add('d-none')
+    }
+    if (selectedChangeUserPanelTab_sm == "MyAccount"){
+        document.getElementById('Aside_profile_View').classList.remove('d-none')
+    }
+    const nedTab = document.getElementById(id+"_sm");
+    nedTab.classList.add('bg-black')
+    nedTab.classList.add('text-white')
+    nedTab.classList.remove('border')
+    nedTab.classList.remove('border-opacity-10')
+    nedTab.classList.remove('border-dark')
+    
+    
+
+    
+
+    const selectedWindow = document.getElementById(selectedChangeUserPanelTab_sm+"_Comporent");
+    selectedWindow.classList.add('d-none')
+
+    const newWindow = document.getElementById(id+"_Comporent");
+    newWindow.classList.remove('d-none')
+
+    selectedChangeUserPanelTab_sm = id
+
+    
+
+
+}
+
 
 function updateProfileIMG(){
     var viwe = document.getElementById("profile_img");

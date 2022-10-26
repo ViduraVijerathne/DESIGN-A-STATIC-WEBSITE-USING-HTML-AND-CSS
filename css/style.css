@@ -1,3 +1,7 @@
 .cuser-pointer{
   cursor: pointer;
 }
+
+body {
+   overflow-x: hidden; /* Hide horizontal scrollbar */
+}
