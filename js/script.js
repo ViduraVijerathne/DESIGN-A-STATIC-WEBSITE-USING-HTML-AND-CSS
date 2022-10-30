@@ -21,6 +21,10 @@ function navigationSign(id,id2){
     widget.classList.toggle('d-none')
 }
 
+function AdminsignIn(){
+    window.location.href = "/pages/admin/adminPanel.html";   
+}
+
 function signIn(){
     alert("sign in")
     window.location.href = "/index.html";
@@ -173,3 +177,67 @@ function updateProfileIMG(){
         viwe.src = url;
     }
 }
+
+function changeColor(){
+    const color_code = document.getElementById('color_code');
+    const color_input = document.getElementById('color_chooser').value;
+
+    color_code.value = color_input;
+}
+
+var colorIDIndex = 0
+function colorAdd(){
+    colorIDIndex += 1
+    const color_name = document.getElementById('color_name').value;
+    const color_code = document.getElementById('color_code').value;
+    const color_input = document.getElementById('color_chooser').value;
+
+    if (color_code.length == 0){
+
+    }
+
+    
+
+    var card = document.getElementById('colorCard');
+    var exit_inner =card.innerHTML;
+
+    var inner = '<div class="col-1 border bg-light rounded ms-3" id="colorCard_'+colorIDIndex+'" > <div class="row ms-1 mt-1"> <div class="col-10 offset-2"><div class=" rounded-circle" style="height: 25px; width: 25px; background-color:'+color_code+';"></div></div></div><div class="row fw-bold text-capitalize text-center"><label>'+color_name+' </label></div><div class="row fw-bold text-capitalize text-center text-black-50"><label>'+color_code+'</label></div><div class="row text-center  "><button class="btn" onclick="removeColor('+colorIDIndex+')"><i class="bi bi-trash-fill"></i></button></div><div class="row p-2"></div></div>'
+
+    card.innerHTML = exit_inner+inner;
+
+
+}
+
+function removeColor(id){
+    var card = document.getElementById('colorCard');
+    var cardItem = document.getElementById('colorCard_'+id);
+    card.removeChild(cardItem)
+
+}
+var selected = 'OverView'
+function LeftBtnNavigation(id){
+    
+
+    var selectingBtn_id  = id + "BTN"
+    var selectedBtn_id = selected+"BTN"
+    var selectingTab_id = id + "Tab";
+    var selectedTab_id = selected + "Tab";
+    
+    selected = id;
+
+    var selectedBtn = document.getElementById(selectedBtn_id);
+    selectedBtn.classList.remove('btn-dark')
+    var selectingBtn = document.getElementById(selectingBtn_id)
+    selectingBtn.classList.add('btn-dark')
+
+    var selectingTab = document.getElementById(selectingTab_id);
+    selectingTab.classList.remove("d-none")
+
+    var  selectednTab = document.getElementById(selectedTab_id);
+    selectednTab.classList.add("d-none")
+
+    
+
+
+}
+

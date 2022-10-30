@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boostrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- linking Boostrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <title> Home </title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left Side -->
+            <div class="col-lg-2 bg-light " style="height: 100vh;">
+                <div class="row">
+
+                    <div class="col-6 offset-lg-3">
+                        <img src="../../src/logo.png" class="img-fluid" alt="" srcset="">
+                    </div>
+
+                    <div class="col-10 offset-lg-2 mt-5">
+
+                        <div onclick="LeftBtnNavigation('OverView')" id="OverViewBTN"
+                            class="row mt-3  fw-bold btn btn-dark d-grid ">
+                            <div class="col-12 ">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <i class="bi bi-grid-1x2-fill"></i>
+                                    </div>
+                                    <div class="col-2">
+                                        <span class="ms-3">OverView</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div onclick="LeftBtnNavigation('Products')" id="ProductsBTN"
+                            class="row mt-3  fw-bold btn  d-grid ">
+                            <div class="col-12 ">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <i class="bi bi-newspaper"></i>
+                                    </div>
+                                    <div class="col-2">
+                                        <span class="ms-3">Products</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div onclick="LeftBtnNavigation('users')" id="usersBTN" class="row mt-3  fw-bold btn  d-grid ">
+                            <div class="col-12 ">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <i class="bi bi-alexa"></i>
+                                    </div>
+                                    <div class="col-2">
+                                        <span class="ms-3">Users</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div onclick="LeftBtnNavigation('Msg')" id="MsgBTN" class="row mt-3  fw-bold btn  d-grid ">
+                            <div class="col-12 ">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <i class="bi bi-chat-fill"></i>
+                                    </div>
+                                    <div class="col-2">
+                                        <span class="ms-3">Messages</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div onclick="LeftBtnNavigation('TopProducts')" id="TopProductsBTN"
+                            class="row mt-3  fw-bold btn  d-grid ">
+                            <div class="col-12 ">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <i class="bi bi-trophy-fill"></i>
+                                    </div>
+                                    <div class="col-2">
+                                        <span class="ms-3">TopProducts</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div onclick="LeftBtnNavigation('Setting')" id="SettingBTN"
+                            class="row mt-3  fw-bold btn  d-grid ">
+                            <div class="col-12 ">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <i class="bi bi-gear-fill"></i>
+                                    </div>
+                                    <div class="col-2">
+                                        <span class="ms-3">Setting</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- Center View -->
+            <div class="col-lg-10 col-12  border-end overflow-scroll MyScrollBar" style="height: 100vh;"
+                id="centerView">
+
+                <!-- Header -->
+                <div class="row">
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-12 fw-bold fs-3 text-capitalize">Hello <span class="">Ahamed</span> ! </div>
+                        </div>
+                        <div class="row fw-bold text-black-50">Let's Do Something new Day !</div>
+                    </div>
+                    <div class="col-6 mt-3">
+                        <div class="row">
+                            <div class="col-10">
+                                <input type="text" name="" id="" class="form-control ">
+                            </div>
+
+                            <div class="col-2">
+                                <button class="btn btn-outline-dark"><i class="bi bi-bell-fill"></i></button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OverViewTab -->
+                <div class="row  " id="OverViewTab">
+                    <div class="col-12">
+                        <!-- Cards -->
+                        <div class="row mt-3 ">
+                            <!-- one card -->
+                            <div class="col-4">
+                                <div class="row m-1">
+                                    <div class="col-12 border rounded m-2" style="background-color:#e1e2f7;">
+                                        <div class="row m-1 ">
+                                            <div class="col-12 ">
+                                                <div class="row">
+                                                    <div class="col-3 mt-3">
+                                                        <div class="rounded-circle bg-light text-center"><i
+                                                                class="bi bi-receipt fw-bold fs-1 "
+                                                                style="color: #333197;"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-3">
+                                            <div class="col-12">
+                                                <span class="fw-bold fs-5">Encrolled Lessons</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row p-3">
+                                            <div class="col-12 rounded" style="background-color:#edeefa;">
+                                                <div class="row p-3">
+                                                    <div class="col-4 text-dark border-end border-1 border-dark"><i
+                                                            class="bi bi-book-half"></i> <span>24</span></div>
+                                                    <div class="col-4 text-dark border-end border-1 border-dark"><i
+                                                            class="bi bi-check2-square"></i> <span>24</span></div>
+                                                    <div class="col-4 text-dark border-end "><i
+                                                            class="bi bi-people-fill"></i> <span>24</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- one card -->
+                            <div class="col-4">
+                                <div class="row m-1">
+                                    <div class="col-12 border rounded m-2" style="background-color:#f7eee1;">
+                                        <div class="row m-1 ">
+                                            <div class="col-12 ">
+                                                <div class="row">
+                                                    <div class="col-3 mt-3">
+                                                        <div class="rounded-circle bg-light text-center"><i
+                                                                class="bi bi-pass fw-bold fs-1 "
+                                                                style="color: #c6791f;"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-3">
+                                            <div class="col-12">
+                                                <span class="fw-bold fs-5">Your Exams</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row p-3">
+                                            <div class="col-12 rounded" style="background-color:#faf5ed;">
+                                                <div class="row p-3">
+                                                    <div class="col-4 text-dark border-end border-1 border-dark"><i
+                                                            class="bi bi-book-half"></i> <span>24</span></div>
+                                                    <div class="col-4 text-dark border-end border-1 border-dark"><i
+                                                            class="bi bi-check2-square"></i> <span>24</span></div>
+                                                    <div class="col-4 text-dark border-end "><i
+                                                            class="bi bi-people-fill"></i> <span>24</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- one card -->
+                            <div class="col-4">
+                                <div class="row m-1">
+                                    <div class="col-12 border rounded m-2" style="background-color:#f0f7e1;">
+                                        <div class="row m-1 ">
+                                            <div class="col-12 ">
+                                                <div class="row">
+                                                    <div class="col-3 mt-3">
+                                                        <div class="rounded-circle bg-light text-center"><i
+                                                                class="bi bi-file-break fw-bold fs-1 "
+                                                                style="color: #469b27;"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-3">
+                                            <div class="col-12">
+                                                <span class="fw-bold fs-5">Your Asigment</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row p-3">
+                                            <div class="col-12 rounded" style="background-color:#f6faed;">
+                                                <div class="row p-3">
+                                                    <div class="col-4 text-dark border-end border-1 border-dark"><i
+                                                            class="bi bi-book-half"></i> <span>24</span></div>
+                                                    <div class="col-4 text-dark border-end border-1 border-dark"><i
+                                                            class="bi bi-check2-square"></i> <span>24</span></div>
+                                                    <div class="col-4 text-dark border-end "><i
+                                                            class="bi bi-people-fill"></i> <span>24</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+                        <!-- Annalizer -->
+                        <div class="row mt-3">
+                            <!-- Bar chart -->
+                            <div class="col-8 bg-light rounded">
+                                <div class="row ms-3 fw-bold fs-4">Marks Annalize</div>
+
+                                <div class="row mt-2 m-1 rounded border border-1">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div
+                                                class="col-11 d-flex flex-column m-4 fw-bold text-black-50 border-end ">
+                                                <div class="row">
+                                                    <div class="col-1 border-end ">
+                                                        <div class="row text-end">100%</div>
+                                                        <div class="row text-end">&nbsp;80%</div>
+                                                        <div class="row text-end">&nbsp;60%</div>
+                                                        <div class="row text-end">&nbsp;40%</div>
+                                                        <div class="row text-end">&nbsp;20%</div>
+                                                        <div class="row text-end">&nbsp;&nbsp;&nbsp; 0%</div>
+
+                                                    </div>
+                                                    <div class="col-11">
+                                                        <div class="row">
+                                                            <div class="col-1 ms-2"
+                                                                style="background-color:#ff9053; height: 150px;"></div>
+                                                            <div class="col-1 ms-2"
+                                                                style="background-color:#ff9053; height: 50px; margin-top: 100px;">
+                                                            </div>
+                                                            <div class="col-1 ms-2"
+                                                                style="background-color:#ff9053; height: 100px; margin-top: 50px;">
+                                                            </div>
+                                                            <div class="col-1 ms-2"
+                                                                style="background-color:#ff9053; height: 50px; margin-top: 100px;">
+                                                            </div>
+                                                            <div class="col-1 ms-2"
+                                                                style="background-color:#ff9053; height: 100px; margin-top: 50px;">
+                                                            </div>
+
+                                                            <div class="col-1 ms-2"
+                                                                style="background-color:#ff9053; height: 50px; margin-top: 100px;">
+                                                            </div>
+                                                            <div class="col-1 ms-2"
+                                                                style="background-color:#ff9053; height: 100px; margin-top: 50px;">
+                                                            </div>
+
+                                                            <div class="col-1 ms-2"
+                                                                style="background-color:#ff9053; height: 50px; margin-top: 100px;">
+                                                            </div>
+                                                            <div class="col-1 ms-2"
+                                                                style="background-color:#ff9053; height: 100px; margin-top: 50px;">
+                                                            </div>
+                                                            <div class="col-1 ms-2"
+                                                                style="background-color:#ff9053; height: 50px; margin-top: 100px;">
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="row">
+
+                                                            <hr>
+                                                            <div class="col-12">
+                                                                <div class="row text-capitalize">
+                                                                    <div class="col-1 offset-1">
+                                                                        Jan
+                                                                    </div>
+                                                                    <div class="col-1 ms-1">
+                                                                        Mar
+                                                                    </div>
+                                                                    <div class="col-1 ms-1">
+                                                                        Apr
+                                                                    </div>
+
+                                                                    <div class="col-1 ms-1">
+                                                                        May
+                                                                    </div>
+                                                                    <div class="col-1 ms-1">
+                                                                        Jun
+                                                                    </div>
+                                                                    <div class="col-1 ms-1">
+                                                                        Jul
+                                                                    </div>
+                                                                    <div class="col-1 ms-1">
+                                                                        Aug
+                                                                    </div>
+                                                                    <div class="col-1 ms-1">
+                                                                        sep
+                                                                    </div>
+
+                                                                    <div class="col-1 ms-1">
+                                                                        oct
+                                                                    </div>
+                                                                    <div class="col-1 ms-1">
+                                                                        nov
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+                        </div>
+
+                        <!-- Leader Bord -->
+                        <div class="row mt-3 ">
+                            <div class="col-11 ms-3 bg-light rounded-1">
+                                <div class="row mt-3">
+                                    <span class="fw-bold  fs-3"> LeaderBord</span>
+                                </div>
+
+                                <div class="row ms-2 mt-2 fw-bold text-black-50">
+                                    <div class="col-2">Rank</div>
+                                    <div class="col-4">Name</div>
+                                    <div class="col-2">Grade</div>
+                                    <div class="col-2">Avg Marks</div>
+                                    <div class="col-2">Points</div>
+                                    <div class="col-12">
+                                        <hr>
+                                    </div>
+                                </div>
+
+                                <!-- One Rank -->
+                                <div class="row ms-2 mt-2 fw-bold ">
+                                    <div class="col-2">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <button class="btn  fw-bold">1</button>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="btn">
+                                                    <i class="bi bi-caret-up-fill text-success"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4">
+                                        H.M.V.S.Vijerathne
+                                    </div>
+
+                                    <div class="col-2">11</div>
+                                    <div class="col-2">2.25</div>
+                                    <div class="col-2">56.22</div>
+                                </div>
+
+                                <!-- One Rank -->
+                                <div class="row ms-2 mt-2 fw-bold ">
+                                    <div class="col-2">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <button class="btn  fw-bold">1</button>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="btn">
+                                                    <i class="bi bi-caret-up-fill text-success"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4">
+                                        H.M.V.S.Vijerathne
+                                    </div>
+
+                                    <div class="col-2">11</div>
+                                    <div class="col-2">2.25</div>
+                                    <div class="col-2">56.22</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product -->
+                <div class="row d-none" id="ProductsTab">
+                    <div class="col-12 p-3 m-3">
+                        <div class="row fw-bold mt-4 fs-5 d-flex justify-content-end me-3">
+                            <div class="col-2"><button class="btn btn-outline-dark" onclick="window.location = 'addNewProduct.html' ">Add New Product</button></div>
+                        </div>
+
+                        <div class="row fw-bold  fs-5 ">
+                            <div class="col-12">
+                                Your All Product Here!
+                            </div>
+
+                            <div class="row">
+                                <!-- item  PID_5599-->
+                                <div class="col-12 col-lg-6  mt-2 " onmouseover="onmouseover_item('PID_5599')"
+                                    onmouseout="onmouseout_item('PID_5599')" id="PID_5599">
+                                    <div class="row p-1">
+                                        <div class="col-12 bg-light rounded-2 border-3 border">
+                                            <div class="row m-1">
+                                                <div class="col-5 " id="product_img_PID_5599">
+                                                    <!-- D-none-->
+                                                    <img src="/src/PID_6699.png " class="img-fluid  bg-light border-0"
+                                                        alt="" srcset="">
+                                                    <i class="bi bi-heart position-absolute text-danger fs-5 d-none"
+                                                        id="heart_PID_5599"></i>
+                                                </div>
+
+                                                <!-- View  Product carosal -->
+                                                <div class="col-12 col-lg-5 d-none" id="product_carosal_PID_5599">
+                                                    <div id="carouselExampleControls" class="carousel slide"
+                                                        data-bs-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="/src/PID_6699.png" class="d-block w-100"
+                                                                    alt="...">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/src/PID_6611.png" class="d-block w-100"
+                                                                    alt="...">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/src/PID_6622.png" class="d-block w-100"
+                                                                    alt="...">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button"
+                                                            data-bs-target="#carouselExampleControls"
+                                                            data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon"
+                                                                aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button"
+                                                            data-bs-target="#carouselExampleControls"
+                                                            data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon"
+                                                                aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-7 " id="product_shortDescription_PID_5599">
+                                                    <!-- D-none-->
+                                                    <br>
+                                                    <span class="fw-bolder text-capitalize">Refurbished 27-inch
+                                                        iMac</span> <br>
+                                                    <span class="text-opacity-25 text-black-50 text-capitalize ">3.6GHz
+                                                        8-core Intel Core
+                                                        i9</span> <br>
+                                                    <span
+                                                        class="text-opacity-25 text-black-50 text-capitalize small">low
+                                                        budget hight
+                                                        pefomerce</span> <br>
+
+                                                    <span>$1499</span>
+
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="row ">
+                                                                <button
+                                                                    class="col-5 btn btn-outline-dark me-1 fw-bold">Add
+                                                                    cart</button>
+                                                                <button class="col-6 btn btn-dark fw-bold">Buy
+                                                                    Now</button>
+                                                                <button
+                                                                    class="col-11 btn btn-outline-secondary mt-1 fw-bold"
+                                                                    onclick="viewProduct('PID_5599')">View
+                                                                    Product</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- View  Product description -->
+                                                <div class="col-12 col-lg-4 d-none "
+                                                    id="product_longDescription_PID_5599">
+                                                    <span class="fw-bolder fs-4 text-capitalize">Refurbished 27-inch
+                                                        iMac</span>
+                                                    <p class="mt-5 fw-bold text-black-50 ">
+                                                        – 3.6GHz 8-core Intel Core i9 <br>
+                                                        – 8GB RAM <br>
+                                                        – 256GB SSD <br>
+                                                        – WebCam/Bluetooth, Touch ID <br>
+                                                        – 13.3″ Retine LED Blacklit Display <br>
+                                                        – True Tone Technology <br>
+                                                        – Space Gray Color <br>
+                                                        – Mac OS <br>
+                                                    </p>
+                                                    <div class="row">
+                                                        <div class="col-12 fw-bold">-Rose Gold</div>
+                                                        <div class=" col-1 rounded-5 p-3 border border-dark m-1 "
+                                                            style="background-color: #a7adba;"></div>
+                                                        <div class=" col-1 rounded-5 p-3 border border-secondary m-1"
+                                                            style="background-color: #FDDCD7;"></div>
+                                                        <div class=" col-1 rounded-5 p-3 border border-secondary m-1"
+                                                            style="background-color:  #aaa9ad;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!--View product purchus details -->
+                                                <div class=" col-12 col-lg-3 border border-1 rounded-1 d-none "
+                                                    id="product_purchasDetails_PID_5599">
+                                                    <div class="row">
+                                                        <div class="col-12 d-flex justify-content-end">
+                                                            <div class="btn-close" onclick="closeProduct('PID_5599')">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="fw-bold fs-3 mt-1 ms-3">$699.00</div>
+                                                    <div class="text-black-50 mt-0 ms-4"><del>$799.00</del></div>
+                                                    <div class="mt-3">
+                                                        <div class="fw-bold">Quantity</div>
+                                                        <input class=" form-control" type="number" value="1">
+                                                    </div>
+                                                    <div class="row mt-4">
+                                                        <div class="col-1 ">
+                                                            <i class="bi bi-truck fs-4 fw-bold  "></i>
+                                                        </div>
+                                                        <div class="col-11">
+                                                            <div class="row ms-2">
+                                                                <div class="col-12 fw-bold text-success">inStock</div>
+                                                                <div class="col-12 text-black-50">Delevery Free in
+                                                                    colombo</div>
+                                                                <div class="col-12 text-black-50">$1 Delevery out of
+                                                                    colombo</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mt-5">
+                                                        <div class="col-12">
+                                                            <div class="row ">
+                                                                
+                                                                <button class="col-11 btn btn-outline-secondary mt-1 fw-bold" onclick="window.location ='updateProduct.html' ">
+                                                                    Update Product
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item  PID_5500-->
+                                <div class="col-12 col-lg-6  mt-2 " onmouseover="onmouseover_item('PID_5500')"
+                                    onmouseout="onmouseout_item('PID_5500')" id="PID_5500">
+                                    <div class="row p-1">
+                                        <div class="col-12 bg-light rounded-2 border-3 border">
+                                            <div class="row m-1">
+                                                <div class="col-5 " id="product_img_PID_5500">
+                                                    <!-- D-none-->
+                                                    <img src="/src/PID_6699.png " class="img-fluid  bg-light border-0"
+                                                        alt="" srcset="">
+                                                    <i class="bi bi-heart position-absolute text-danger fs-5 d-none"
+                                                        id="heart_PID_5500"></i>
+                                                </div>
+
+                                                <!-- View  Product carosal -->
+                                                <div class="col-12 col-lg-5 d-none" id="product_carosal_PID_5500">
+                                                    <div id="carouselExampleControls" class="carousel slide"
+                                                        data-bs-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="/src/PID_6699.png" class="d-block w-100"
+                                                                    alt="...">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/src/PID_6611.png" class="d-block w-100"
+                                                                    alt="...">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/src/PID_6622.png" class="d-block w-100"
+                                                                    alt="...">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button"
+                                                            data-bs-target="#carouselExampleControls"
+                                                            data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon"
+                                                                aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button"
+                                                            data-bs-target="#carouselExampleControls"
+                                                            data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon"
+                                                                aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-7 " id="product_shortDescription_PID_5500">
+                                                    <!-- D-none-->
+                                                    <br>
+                                                    <span class="fw-bolder text-capitalize">Refurbished 27-inch
+                                                        iMac</span> <br>
+                                                    <span class="text-opacity-25 text-black-50 text-capitalize ">3.6GHz
+                                                        8-core Intel Core
+                                                        i9</span> <br>
+                                                    <span
+                                                        class="text-opacity-25 text-black-50 text-capitalize small">low
+                                                        budget hight
+                                                        pefomerce</span> <br>
+
+                                                    <span>$1499</span>
+
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="row ">
+                                                                <button
+                                                                    class="col-5 btn btn-outline-dark me-1 fw-bold">Add
+                                                                    cart</button>
+                                                                <button class="col-6 btn btn-dark fw-bold">Buy
+                                                                    Now</button>
+                                                                <button
+                                                                    class="col-11 btn btn-outline-secondary mt-1 fw-bold"
+                                                                    onclick="viewProduct('PID_5500')">View
+                                                                    Product</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- View  Product description -->
+                                                <div class="col-12 col-lg-4 d-none "
+                                                    id="product_longDescription_PID_5500">
+                                                    <span class="fw-bolder fs-4 text-capitalize">Refurbished 27-inch
+                                                        iMac</span>
+                                                    <p class="mt-5 fw-bold text-black-50 ">
+                                                        – 3.6GHz 8-core Intel Core i9 <br>
+                                                        – 8GB RAM <br>
+                                                        – 256GB SSD <br>
+                                                        – WebCam/Bluetooth, Touch ID <br>
+                                                        – 13.3″ Retine LED Blacklit Display <br>
+                                                        – True Tone Technology <br>
+                                                        – Space Gray Color <br>
+                                                        – Mac OS <br>
+                                                    </p>
+                                                    <div class="row">
+                                                        <div class="col-12 fw-bold">-Rose Gold</div>
+                                                        <div class=" col-1 rounded-5 p-3 border border-dark m-1 "
+                                                            style="background-color: #a7adba;"></div>
+                                                        <div class=" col-1 rounded-5 p-3 border border-secondary m-1"
+                                                            style="background-color: #FDDCD7;"></div>
+                                                        <div class=" col-1 rounded-5 p-3 border border-secondary m-1"
+                                                            style="background-color:  #aaa9ad;"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!--View product purchus details -->
+                                                <div class=" col-12 col-lg-3 border border-1 rounded-1 d-none "
+                                                    id="product_purchasDetails_PID_5500">
+                                                    <div class="row">
+                                                        <div class="col-12 d-flex justify-content-end">
+                                                            <div class="btn-close" onclick="closeProduct('PID_5500')">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="fw-bold fs-3 mt-1 ms-3">$699.00</div>
+                                                    <div class="text-black-50 mt-0 ms-4"><del>$799.00</del></div>
+                                                    <div class="mt-3">
+                                                        <div class="fw-bold">Quantity</div>
+                                                        <input class=" form-control" type="number" value="1">
+                                                    </div>
+                                                    <div class="row mt-4">
+                                                        <div class="col-1 ">
+                                                            <i class="bi bi-truck fs-4 fw-bold  "></i>
+                                                        </div>
+                                                        <div class="col-11">
+                                                            <div class="row ms-2">
+                                                                <div class="col-12 fw-bold text-success">inStock</div>
+                                                                <div class="col-12 text-black-50">Delevery Free in
+                                                                    colombo</div>
+                                                                <div class="col-12 text-black-50">$1 Delevery out of
+                                                                    colombo</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row mt-5">
+                                                        <div class="col-12">
+                                                            <div class="row ">
+                                                                
+                                                                <button class="col-11 btn btn-outline-secondary mt-1 fw-bold" onclick="window.location ='updateProduct.html'">
+                                                                    Update Product
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                               
+
+                                
+
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Messeges -->
+                <div class="row  d-none" id="MsgTab">
+                    <div class="col-10">
+                        <div class="row">
+                            <div class="col-12 mt-5 fw-bold text-capitalize fs-4">Your Messages</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 overflow-scroll " style="height:80vh;">
+                                <div class="row mt-5">
+                                    <div class="col-11 mt-5 ms-5  d-flex justify-align-content-between">
+                                        <span class="bg-primary bg-opacity-10 ps-3 ms-3 p-3 fw-bold rounded text-end "
+                                            style="max-width:50vw;">Hello Vidura How Are You</span>
+                                    </div>
+
+                                    <div class="col-11 mt-5 ms-5  d-flex justify-content-end">
+                                        <span class="bg-secondary bg-opacity-10 ps-3 ms-3 p-3 fw-bold rounded text-end "
+                                            style="max-width:50vw;">I'm Fine Thank You</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row sticky-bottom ">
+                            <div class="col-9 mb-5">
+                                <input type="text" class="form-control" placeholder="Type Semething">
+                            </div>
+                            <div class="col-3 mb-5">
+                                <button class="btn btn-dark"><i class="bi bi-send-fill"></i></button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-2 mt-4 bg-light">
+                        <div class="row mt-3">
+                            <div class="col-10 offset-lg-1 ">
+                                <div class="row">
+                                    <button class="btn btn-dark fw-bold">Ahamed Rosel </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2 ">
+                            <div class="col-10 offset-lg-1 ">
+                                <div class="row">
+                                    <button class="btn border border-opacity-10 fw-bold text-end">Rosan Aminda <span
+                                            class="bg-danger rounded-circle p-1 text-white">5</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2 ">
+                            <div class="col-10 offset-lg-1 ">
+                                <div class="row">
+                                    <button class="btn border border-opacity-10 fw-bold text-end">max Am <span
+                                            class="bg-danger rounded-circle p-1 text-white">5</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2 ">
+                            <div class="col-10 offset-lg-1 ">
+                                <div class="row">
+                                    <button class="btn border border-opacity-10 fw-bold text-end">David <span
+                                            class="bg-danger rounded-circle p-1 text-white">5</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2 ">
+                            <div class="col-10 offset-lg-1 ">
+                                <div class="row">
+                                    <button class="btn border border-opacity-10 fw-bold text-end">Sumer <span
+                                            class="bg-danger rounded-circle p-1 text-white">5</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+                <!-- Setting -->
+                <div class="row  d-none" id="SettingTab">
+                    <div class="col-12">
+                        <div class="row">
+                            <!-- Edit Profile -->
+                            <div class="col-6">
+                                <div class="row fw-bold fs-3 mt-5"> Edit Profile</div>
+
+                                <div class="row p-2">
+                                    <div class="col-12 m-2  border rounded">
+
+                                        <div class="row mt-3">
+                                            <div class="col-12 fw-bold fs-5"> User Name</div>
+                                            <div class="col-12">
+                                                <input type="text" placeholder="User Name" class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-3">
+                                            <div class="col-6 fw-bold fs-5"> First Name</div>
+                                            <div class="col-6 fw-bold fs-5"> Last Name</div>
+
+                                            <div class="col-6">
+                                                <input type="text" placeholder="First Name" class="form-control">
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" placeholder="Last Name" class="form-control">
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="row mt-3">
+                                            <div class="col-6 fw-bold fs-5"> WhatsApp Number</div>
+                                            <div class="col-6 fw-bold fs-5"> Telegram Number</div>
+
+                                            <div class="col-6">
+                                                <input type="text" placeholder="WhatsApp Number" class="form-control">
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" placeholder="Telegram Number" class="form-control">
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="row mt-3">
+                                            <div class="col-6 fw-bold fs-5"> Email</div>
+                                            <div class="col-6 fw-bold fs-5"> School</div>
+
+                                            <div class="col-6">
+                                                <input type="text" placeholder="Email" class="form-control">
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" placeholder="School" class="form-control">
+                                            </div>
+
+
+                                        </div>
+
+
+
+                                        <div class="row mt-3 mb-5">
+                                            <div class="col-12 fw-bold fs-5"> Address</div>
+                                            <div class="col-12">
+                                                <input type="text" placeholder="Address" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Change Password -->
+                            <div class="col-6">
+                                <div class="row fw-bold fs-3 mt-5"> Change Password</div>
+                                <div class="row p-2">
+                                    <div class="col-12 m-2  border rounded">
+
+                                        <div class="row mt-3">
+                                            <div class="col-12 fw-bold fs-5"> Currunt Password</div>
+                                            <div class="col-12">
+                                                <input type="text" placeholder="Currunt Password" class="form-control">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row mt-3">
+                                            <div class="col-12 fw-bold fs-5"> Password</div>
+                                            <div class="col-12">
+                                                <input type="text" placeholder="Password" class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-3 mb-5">
+                                            <div class="col-12 fw-bold fs-5"> Retype Password</div>
+                                            <div class="col-12">
+                                                <input type="text" placeholder=" Retype Password" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <!-- Edit Profile img -->
+                                    <div class="col-6">
+                                        <div class="row fw-bold fs-3 mt-5 ms-2"> Profile Image</div>
+                                        <div class="row p-2">
+                                            <div class="col-12 m-2  border rounded">
+
+                                                <div class="row">
+                                                    <div class="col-12  d-flex justify-content-center">
+                                                        <input type="file" name="" id="profileUploder" class="d-none">
+                                                        <label for="profileUploder">
+                                                            <img src="../../src/prfile.png" class="img-fluid" alt=""
+                                                                srcset="">
+                                                        </label>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- Boostrap Java Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
+
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>
